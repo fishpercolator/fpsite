@@ -14,12 +14,11 @@ html, body {
 }
 
 body {
-  background: url(~assets/img/bg.jpg);
+  background: url(~assets/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
   color: $black;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   overflow-y: scroll; // force scrollbar to appear even on short pages
 }
 
@@ -46,15 +45,15 @@ a {
 
 .cta {
   a {
-    background: linear-gradient($accent, lighten($accent, 18));
+    background: $accent;
     font-size: 1.5rem;
-    color: $black;
+    color: $white;
     font-weight: bold;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
-    border: 1px solid transparentize($black, 0.8);
+    border: 2px solid $white;
     &:hover {
-      background: linear-gradient(darken($accent, 9), lighten($accent, 9));
+      background: linear-gradient(darken($accent, 9), $accent);
       text-decoration: none;
     }
   }
