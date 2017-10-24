@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "collaboration",
+    "name": "Collaboration"
+  },
+  {
+    "slug": "honesty",
+    "name": "Honesty & humour"
+  },
+  {
+    "slug": "testing",
+    "name": "Regression testing"
+  },
+  {
+    "slug": "scalability",
+    "name": "Horizontal scalability"
+  },
+  {
+    "slug": "iterative",
+    "name": "Iterative development"
+  },
+  {
+    "slug": "legacy",
+    "name": "Leaving positive legacy"
+  },
+  {
+    "slug": "trackrecord",
+    "name": "Proven success stories"
+  },
+  {
+    "slug": "conscience",
+    "name": "A social conscience"
+  }
+]

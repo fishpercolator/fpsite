@@ -14,26 +14,40 @@
     <div id="clients" class="info">
       <h2>Our clients &amp; partners</h2>
       <div class="logos">
-        <client v-for="client in clients" :key="client.slug" v-bind="client"></client>
+        <client v-for="client in clients" :key="client.slug" v-bind="client" />
       </div>
     </div>
     <div class="cta">
       <router-link to="/portfolio">View our portfolio</router-link>
+    </div>
+    <div id="usps" class="info">
+      <h2>Why we're different</h2>
+      <div class="bullets">
+        <bullet v-for="usp in usps" :key="usp.slug" v-bind="usp" />
+      </div>
+    </div>
+    <div class="cta">
+      <router-link to="/about">See our unique offering</router-link>
     </div>
   </div>
 </template>
 
 <script>
 import clients from '../assets/clients.json'
+import usps from '../assets/usps.json'
+
 import Client from '../components/Client.vue'
+import UspBullet from '../components/UspBullet.vue'
 
 var data = {
-  clients
+  clients,
+  usps
 }
 export default {
   name: 'home',
   components: {
-    client: Client
+    client: Client,
+    bullet: UspBullet
   },
   data: () => data
 }
@@ -52,7 +66,7 @@ export default {
   .info {
     @extend %box;
   }
-  #clients .logos {
+  #clients .logos, #usps .bullets {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
