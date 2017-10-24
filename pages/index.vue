@@ -11,6 +11,15 @@
     <div class="cta">
       <router-link to="/contact">Get in touch</router-link>
     </div>
+    <div id="usps" class="info">
+      <h2>Why we're different</h2>
+      <div class="bullets">
+        <bullet v-for="usp in usps" :key="usp.slug" v-bind="usp" />
+      </div>
+    </div>
+    <div class="cta">
+      <router-link to="/about">Read about our unique approach</router-link>
+    </div>
     <div id="clients" class="info">
       <h2>Our clients &amp; partners</h2>
       <div class="logos">
@@ -19,15 +28,6 @@
     </div>
     <div class="cta">
       <router-link to="/portfolio">View our portfolio</router-link>
-    </div>
-    <div id="usps" class="info">
-      <h2>Why we're different</h2>
-      <div class="bullets">
-        <bullet v-for="usp in usps" :key="usp.slug" v-bind="usp" />
-      </div>
-    </div>
-    <div class="cta">
-      <router-link to="/about">See our unique offering</router-link>
     </div>
   </div>
 </template>
