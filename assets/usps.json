@@ -1,34 +1,42 @@
 [
   {
     "slug": "collaboration",
-    "name": "Collaboration"
+    "name": "Collaboration",
+    "img_desc": "Fish in teacups having a conversation"
   },
   {
     "slug": "honesty",
-    "name": "Honesty & humour"
+    "name": "Honesty & humour",
+    "img_desc": "Person with a percolator and a speech bubble containing a fish"
   },
   {
     "slug": "testing",
-    "name": "Regression testing"
+    "name": "Regression testing",
+    "img_desc": "Two percolators marked with a cross and a tick"
   },
   {
     "slug": "scalability",
-    "name": "Horizontal scalability"
+    "name": "Horizontal scalability",
+    "img_desc": "A wide percolator with an eel"
   },
   {
     "slug": "iterative",
-    "name": "Iterative development"
+    "name": "Iterative development",
+    "img_desc": "A percolator and three successively larger fish"
   },
   {
     "slug": "legacy",
-    "name": "Leaving positive legacy"
+    "name": "Leaving positive legacy",
+    "img_desc": "A lattice of hexagons, with a fish percolator in the middle"
   },
   {
     "slug": "trackrecord",
-    "name": "Proven success stories"
+    "name": "Proven success stories",
+    "img_desc": "A percolator winning the gold medal in a sporting event"
   },
   {
     "slug": "conscience",
-    "name": "A social conscience"
+    "name": "A social conscience",
+    "img_desc": "A percolator protesting with a fish placard"
   }
 ]

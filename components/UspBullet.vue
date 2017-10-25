@@ -1,13 +1,13 @@
 <template>
   <div class="bullet-outer">
     <div class="bullet" @click="modalShown = true">
-      <img :src="image" />
+      <img :src="image" :alt="img_desc" />
       <h3>{{name}}</h3>
     </div>
     <div class="modal" v-if="modalShown" @click="modalShown = false">
       <div class="modal-content" @click.stop="">
         <div class="close" @click="modalShown = false">×</div>
-        <img :src="image" />
+        <img :src="image" :alt="img_desc" />
         <div>
           <h2>{{name}}</h2>
           <p>{{description}}</p>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  props: ['slug', 'name'],
+  props: ['slug', 'name', 'img_desc'],
   data: function () { return {modalShown: false} },
   computed: {
     image: function () {
