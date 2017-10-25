@@ -9,10 +9,10 @@
 export default {
   props: ['name', 'slug', 'url'],
   computed: {
-    logo: function () {
+    logo () {
       return `/clients/${this.slug}.png`
     },
-    logo_name: function () {
+    logo_name () {
       return `${this.name} logo`
     }
   }

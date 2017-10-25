@@ -39,17 +39,13 @@ import usps from '../assets/usps.json'
 import Client from '../components/Client.vue'
 import UspBullet from '../components/UspBullet.vue'
 
-var data = {
-  clients,
-  usps
-}
 export default {
   name: 'home',
   components: {
     client: Client,
     bullet: UspBullet
   },
-  data: () => data
+  data () { return {clients, usps} }
 }
 </script>
 

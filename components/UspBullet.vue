@@ -7,32 +7,22 @@
     <div class="modal" v-if="modalShown" @click="modalShown = false">
       <div class="modal-content" @click.stop="">
         <div class="close" @click="modalShown = false">×</div>
-        <img :src="image" :alt="img_desc" />
-        <div>
-          <h2>{{name}}</h2>
-          <markdown v-bind="markdownProps">{{description}}</markdown>
-        </div>
+        <usp-detail v-bind="$props" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Markdown from 'vue-markdown'
-
+import UspDetail from './UspDetail.vue'
 export default {
   props: ['slug', 'name', 'img_desc', 'description'],
   components: {
-    markdown: Markdown
+    'usp-detail': UspDetail
   },
   data () {
     return {
-      modalShown: false,
-      markdownProps: {
-        anchorAttributes: {
-          target: '_blank'
-        }
-      }
+      modalShown: false
     }
   },
   computed: {
@@ -79,32 +69,13 @@ export default {
       position: relative;
       margin: 15% auto;
       width: 80%;
-      min-height: 15em;
+      min-height: 14em;
       border-radius: 0.5em;
       background: $white;
       padding: 1em;
       @media (max-width: $mobile) {
         max-height: 75%;
         overflow: auto;
-      }
-      img {
-        height: 14em;
-        float: left;
-        margin-right: 1em;
-        margin-bottom: 10em;
-        @media (max-width: $mobile) {
-          display: none;
-        }
-      }
-      h2 {
-        border-bottom: none;
-        padding: 0;
-      }
-      blockquote {
-        font-style: italic;
-        color: $accent;
-        margin-left: 0;
-        margin-right: 0;
       }
       .close {
         position: absolute;

@@ -8,6 +8,14 @@
   > * {
     margin: 1em;
   }
+  > h1 {
+    text-align: left;
+    width: 100%;
+    max-width: 60rem;
+    margin: 2rem auto;
+    color: $title;
+    border-bottom: 4px solid $title;
+  }
 }
 
 %box {
@@ -16,7 +24,7 @@
   width: 100vw;
   max-width: 60rem;
   $space: 1rem;
-  h2 {
+  > h2 {
     color: $title;
     margin: 0 $space;
     padding: 1rem 0;
