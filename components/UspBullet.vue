@@ -51,6 +51,9 @@ export default {
   text-align: center;
   transition: all 0.2s ease-in-out;
   margin: 1em;
+  @media (max-width: $mobile) {
+    margin: 1em 0em;
+  }
   img {
     width: 10em;
     height: 7em;
@@ -80,11 +83,18 @@ export default {
       border-radius: 0.5em;
       background: $white;
       padding: 1em;
+      @media (max-width: $mobile) {
+        max-height: 75%;
+        overflow: auto;
+      }
       img {
         height: 14em;
         float: left;
         margin-right: 1em;
         margin-bottom: 10em;
+        @media (max-width: $mobile) {
+          display: none;
+        }
       }
       h2 {
         border-bottom: none;
@@ -93,6 +103,8 @@ export default {
       blockquote {
         font-style: italic;
         color: $accent;
+        margin-left: 0;
+        margin-right: 0;
       }
       .close {
         position: absolute;

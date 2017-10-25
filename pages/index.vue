@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="cta">
-      <router-link to="/about">Read about our unique approach</router-link>
+      <router-link to="/about">See all</router-link>
     </div>
     <div id="clients" class="info">
       <h2>Our clients &amp; partners</h2>
@@ -62,6 +62,10 @@ export default {
     max-width: 90vw;
     margin-top: 5em;
     margin-bottom: 5em;
+    @media (max-width: $mobile) {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
   }
   .info {
     @extend %box;

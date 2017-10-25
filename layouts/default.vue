@@ -53,6 +53,7 @@ a {
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: 2px solid $white;
+    white-space: nowrap;
     &:hover {
       background: linear-gradient(darken($accent, 9), $accent);
       text-decoration: none;

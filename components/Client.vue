@@ -27,6 +27,9 @@ export default {
   width: 10em;
   height: 12em;
   margin: 1em;
+  @media (max-width: $mobile) {
+    margin: 1em 0em;
+  }
   transition: all 0.2s ease-in-out;
   img {
     width: 10em;
