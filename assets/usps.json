@@ -2,17 +2,20 @@
   {
     "slug": "collaboration",
     "name": "Collaboration",
-    "img_desc": "Fish in teacups having a conversation"
+    "img_desc": "Fish in teacups having a conversation",
+    "description": "Developing software is a team effort: it can't be done in a vacuum.\n\nWhen we build software, we keep two-way dialogue open with you, so that we can share prototypes, exchange ideas and make sure we stay on the same page at all times.\n\nBefore each iteration, we formalise requirements *together* with you, so that there are no big surprises on delivery day.\n\n**Consultation is always free**: we don't believe in charging you before you know if we're the right fit."
   },
   {
     "slug": "honesty",
     "name": "Honesty & humour",
-    "img_desc": "Person with a percolator and a speech bubble containing a fish"
+    "img_desc": "Person with a percolator and a speech bubble containing a fish",
+    "description": "It's easy for software developers to adopt the 'car mechanic' approach and keep you in the dark about how hard something is or why something costs what it does. Honesty is so important to us: we want to make sure you understand *why* and *how* things work, both in terms of development and in the way we do business.\n\nWe're huge fans of Plain English, and this is reflected in our communication style and even our contracts.\n\nWe're in this to have fun, and we want you to have fun working with us too. So apologies in advance for all the Twin Peaks and Kate Bush references."
   },
   {
     "slug": "testing",
     "name": "Regression testing",
-    "img_desc": "Two percolators marked with a cross and a tick"
+    "img_desc": "Two percolators marked with a cross and a tick",
+    "description": "Software isn't finished when the first version is delivered. Every release adds new features and functionality.\n\nThat's why regression testing is so important to us: we build automated tests into every iteration of a product so that you can be sure the *old* features are still working whenever we create new ones.\n\n[You can read more about this on our blog](https://medium.com/@fishpercolator/regression-testing-or-why-the-fastest-developers-might-not-be-the-best-ones-4c2992e37c03)."
   },
   {
     "slug": "scalability",
@@ -26,7 +29,7 @@
   },
   {
     "slug": "legacy",
-    "name": "Leaving positive legacy",
+    "name": "Leaving a positive legacy",
     "img_desc": "A lattice of hexagons, with a fish percolator in the middle"
   },
   {

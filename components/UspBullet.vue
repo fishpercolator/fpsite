@@ -10,7 +10,7 @@
         <img :src="image" :alt="img_desc" />
         <div>
           <h2>{{name}}</h2>
-          <p>{{description}}</p>
+          <markdown v-bind="markdownProps">{{description}}</markdown>
         </div>
       </div>
     </div>
@@ -18,9 +18,23 @@
 </template>
 
 <script>
+import Markdown from 'vue-markdown'
+
 export default {
-  props: ['slug', 'name', 'img_desc'],
-  data: function () { return {modalShown: false} },
+  props: ['slug', 'name', 'img_desc', 'description'],
+  components: {
+    markdown: Markdown
+  },
+  data: function () {
+    return {
+      modalShown: false,
+      markdownProps: {
+        anchorAttributes: {
+          target: '_blank'
+        }
+      }
+    }
+  },
   computed: {
     image: function () {
       return `/usps/${this.slug}.svg`
@@ -50,7 +64,7 @@ export default {
     transform: scale(1.1);
   }
 }
-.bullet-outer {
+#home .bullet-outer {
   .modal {
     position: fixed;
     left: 0;
@@ -62,14 +76,18 @@ export default {
       position: relative;
       margin: 15% auto;
       width: 80%;
-      max-height: 10em;
+      min-height: 15em;
       border-radius: 0.5em;
       background: $white;
       padding: 1em;
-      display: flex;
       img {
-        width: 10em;
-        object-fit: scale-down;
+        height: 14em;
+        float: left;
+        margin-right: 1em;
+      }
+      h2 {
+        border-bottom: none;
+        padding-bottom: 0;
       }
       .close {
         position: absolute;

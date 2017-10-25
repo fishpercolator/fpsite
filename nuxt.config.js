@@ -18,6 +18,11 @@ module.exports = {
   */
   loading: { color: '#660080' },
   /*
+  ** Nuxt modules
+  */
+  modules: [
+  ],
+  /*
   ** Build configuration
   */
   build: {
