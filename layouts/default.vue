@@ -5,6 +5,7 @@
 </template>
 
 <style lang="scss">
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
 @import "~assets/settings";
 
 html, body {
@@ -17,8 +18,8 @@ body {
   background: url(~assets/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: $black;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
   overflow-y: scroll; // force scrollbar to appear even on short pages
 }
 
