@@ -25,7 +25,7 @@ export default {
   components: {
     markdown: Markdown
   },
-  data: function () {
+  data () {
     return {
       modalShown: false,
       markdownProps: {
@@ -36,7 +36,7 @@ export default {
     }
   },
   computed: {
-    image: function () {
+    image () {
       return `/usps/${this.slug}.svg`
     }
   }
@@ -84,10 +84,15 @@ export default {
         height: 14em;
         float: left;
         margin-right: 1em;
+        margin-bottom: 10em;
       }
       h2 {
         border-bottom: none;
-        padding-bottom: 0;
+        padding: 0;
+      }
+      blockquote {
+        font-style: italic;
+        color: $accent;
       }
       .close {
         position: absolute;
