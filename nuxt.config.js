@@ -18,9 +18,12 @@ module.exports = {
   */
   loading: { color: '#660080' },
   /*
-  ** Nuxt modules
+  ** Nuxt modules & plugins
   */
   modules: [
+  ],
+  plugins: [
+    '~/plugins/globals.js'
   ],
   /*
   ** Build configuration

@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="cta">
-      <router-link to="/portfolio">View our portfolio</router-link>
+      <router-link to="/projects">View our portfolio</router-link>
     </div>
   </div>
 </template>
@@ -59,7 +59,7 @@ export default {
     margin-top: 5em;
     margin-bottom: 5em;
     @media (max-width: $mobile) {
-      margin-top: 2em;
+      margin-top: 4em;
       margin-bottom: 2em;
     }
   }
