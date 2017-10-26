@@ -119,14 +119,15 @@ nav {
           background: $color;
           color: $darker;
         }
-  	
-  			&.nuxt-link-exact-active {
-          font-style: italic;
-  			}
       }
+			&.nuxt-link-exact-active {
+        div::before {
+          content: '• ';
+        }
+			}
 			
 			&.toggle {
-				transform: scale3d(.9,.9,.9) rotate3d(0,0,1,$start-rot - 180deg);
+				transform: scale3d(.9,.9,.9) otate3d(0,0,1,$start-rot - 180deg);
 			}
 		}
 	}
@@ -136,17 +137,13 @@ nav {
 	line-height: $size*2;
 	padding: 0;
 	width: $size*2;
-	background: $color-inner;
+	background: transparentize($color-inner, 0.5);
 	opacity: 0.8;
 	transform: none;
 	pointer-events: auto;
 	transition-delay: 0s;
   font-size: $size*0.8;
 	
-	.open & {
-		transform: rotate3d(0,0,1,0deg);
-	}
-
 	&:hover {
     text-decoration: none;
 	}
