@@ -1,12 +1,21 @@
-r<template>
+<template>
   <div id="contact">
     <div id="form">
       <h2>Contact Fish Percolator</h2>
-      <p>Lorem ipsum dolor sit amet</p>
-      <p><router-link to="/">Go home</router-link></p>
+      <contact-form />
     </div>
   </div>
 </template>
+
+<script>
+import ContactForm from '../components/ContactForm.vue'
+
+export default {
+  components: {
+    'contact-form': ContactForm
+  }
+}
+</script>
 
 <style lang="scss">
 @import "~assets/mixins";
