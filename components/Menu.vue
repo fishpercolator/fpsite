@@ -3,11 +3,12 @@ Adapted from https://codepen.io/bennettfeely/pen/qRJOZJ
 <template>
   <div id="menu-container">
     <nav id="menu" v-bind:class="{ open: isOpen }">
-      <router-link to="/contact" class="disc l1"><div>Contact</div></router-link>
-      <router-link to="/projects" class="disc l2"><div>Portfolio</div></router-link>
-      <router-link to="/about" class="disc l3"><div>About</div></router-link>
-      <router-link to="/" class="disc l4"><div>Home</div></router-link>
-      <a class="disc l5 toggle" @click="isOpen = !isOpen">
+      <a href="https://medium.com/@fishpercolator" class="disc l1" target="_blank"><div>Blog</div></a>
+      <router-link to="/contact" class="disc l2"><div>Contact</div></router-link>
+      <router-link to="/projects" class="disc l3"><div>Portfolio</div></router-link>
+      <router-link to="/about" class="disc l4"><div>About</div></router-link>
+      <router-link to="/" class="disc l5"><div>Home</div></router-link>
+      <a class="disc l6 toggle" @click="isOpen = !isOpen">
         <span v-if="isOpen" aria-label="close">✕</span>
         <span v-else aria-label="menu">☰</span>
       </a>
@@ -25,7 +26,7 @@ export default {
 
 <style lang="scss">
 $size : 40px;
-$items : 5;
+$items : 6;
 $transition : .5s;
 $bounce : cubic-bezier(.3,1.4,.5,.9);
 $color-outer : mix(white, #660080, 30%);
