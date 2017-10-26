@@ -10,6 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Fish Percolator site' }
     ],
     link: [
+      { rel: 'stylesheet', media: 'screen', href: '//fonts.googleapis.com/css?family=Oxygen'},
       { rel: 'shortcut icon', href: '/favicon.ico' }
     ]
   },

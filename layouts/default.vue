@@ -6,7 +6,6 @@
 </template>
 
 <style lang="scss">
-@import url(https://fonts.googleapis.com/css?family=Oxygen);
 @import "~assets/settings";
 
 html, body {
