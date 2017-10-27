@@ -127,7 +127,7 @@ nav {
 			}
 			
 			&.toggle {
-				transform: scale3d(.9,.9,.9) otate3d(0,0,1,$start-rot - 180deg);
+				transform: scale3d(.9,.9,.9) rotate3d(0,0,1,$start-rot);
 			}
 		}
 	}
@@ -143,7 +143,7 @@ nav {
 	pointer-events: auto;
 	transition-delay: 0s;
   font-size: $size*0.8;
-	
+  
 	&:hover {
     text-decoration: none;
 	}
