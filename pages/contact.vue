@@ -1,7 +1,11 @@
 <template>
   <div id="contact">
-    <div id="details">
+    <div id="form">
       <h2>Contact us</h2>
+      <contact-form />
+    </div>
+    <div id="details">
+      <h2>All the details</h2>
       <div class="columns">
         <dl>
           <dt><img src="~assets/img/email.svg" alt="Envelope"> Email</dt>
@@ -21,10 +25,6 @@
         </dl>
         <iframe id="map" :src="gmapsUrl" allowfullscreen></iframe>
       </div>
-    </div>
-    <div id="form">
-      <h2>or fill in this form</h2>
-      <contact-form />
     </div>
     <div class="cta">
       <router-link to="/">Back to home</router-link>

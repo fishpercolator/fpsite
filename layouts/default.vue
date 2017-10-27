@@ -35,14 +35,15 @@ body {
 #logo-container {
   max-width: 60rem;
   margin: 0 auto;
-  height: 5rem;
+  height: 5.5rem;
   overflow: hidden;
   transition: height 0.2s ease-in-out;
   &.invisible {
     height: 0;
   }
   img {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
     height: 3rem;
   }
 }
