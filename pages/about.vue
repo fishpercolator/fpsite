@@ -28,7 +28,7 @@ export default {
   .usp-detail {
     @extend %box;
     img {
-      margin-bottom: 4em;
+      margin-bottom: 2em;
       @media (max-width: $mobile) {
         max-height: 10em;
         display: block;

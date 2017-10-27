@@ -42,6 +42,10 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+  },
+  generate: {
+    // Generate a route for each project
+    routes: require('./assets/projects.json').map((p) => `/project/${p.slug}`)
   }
 }

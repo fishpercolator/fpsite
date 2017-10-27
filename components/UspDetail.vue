@@ -39,7 +39,7 @@ export default {
 .usp-detail {
   img {
     height: 14em;
-    max-width: 20em;
+    width: 12em;
     object-fit: scale-down;
     float: left;
     margin-right: 1em;

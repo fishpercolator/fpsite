@@ -11,7 +11,7 @@
   > h1 {
     text-align: left;
     width: calc(100% - 2rem);
-    max-width: 60rem;
+    max-width: calc(60rem - 2rem);
     margin: 2rem auto;
     padding: 0 1rem 0.5rem 1rem;
     color: $title;
@@ -27,7 +27,7 @@
   $space: 1rem;
   > h2 {
     color: $title;
-    margin: 0 $space;
+    margin: $space $space 0 $space;
     padding: 1rem 0 0.5rem 0;
     border-bottom: 4px solid $title;
   }

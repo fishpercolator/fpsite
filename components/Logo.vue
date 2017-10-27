@@ -12,7 +12,7 @@ Adapted from https://codepen.io/bennettfeely/pen/qRJOZJ
   margin: 0 auto;
   height: 5.5rem;
   overflow: hidden;
-  transition: height 0.2s ease-in-out;
+  transition: height 0.1s linear;
   &.invisible {
     height: 0;
   }

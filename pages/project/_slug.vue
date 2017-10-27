@@ -1,9 +1,9 @@
 <template>
-  <project/>
+  <project :slug="$route.params.slug"/>
 </template>
 
 <script>
-import Project from '../components/Project.vue'
+import Project from '../../components/Project.vue'
 export default {
   components: {
     project: Project
