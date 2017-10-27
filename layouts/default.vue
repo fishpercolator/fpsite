@@ -1,9 +1,18 @@
 <template>
   <div>
     <nav-menu/>
+    <div id="logo-container" :class="{invisible: isIndex}"><img v-if="!isIndex" src="~assets/img/logohoriz.svg" alt="Fish Percolator logo" /></div>
     <nuxt/>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    isIndex () { return this.$nuxt.$route.name === 'index' }
+  }
+}
+</script>
 
 <style lang="scss">
 @import "~assets/settings";
@@ -21,6 +30,21 @@ body {
   font-family: $font;
   font-size: 18px;
   overflow-y: scroll; // force scrollbar to appear even on short pages
+}
+
+#logo-container {
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 5rem;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+  &.invisible {
+    height: 0;
+  }
+  img {
+    margin-top: 2rem;
+    height: 3rem;
+  }
 }
 
 a {
