@@ -9,7 +9,7 @@
 <script>
 export default {
   computed: {
-    isIndex () { return this.$nuxt.$route.name === 'index' }
+    isIndex () { return this.$nuxt.$route.path === '/' }
   }
 }
 </script>
