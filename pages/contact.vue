@@ -1,21 +1,23 @@
 <template>
   <div id="contact">
     <div id="details">
-      <h2>Contact Fish Percolator</h2>
+      <h2>Contact us</h2>
       <div class="columns">
         <dl>
-          <dt>Address</dt>
-          <dd>Duke Studios<br/>3 Sheaf Street<br/>Leeds LS10 1HD</dd>
-          <dt>Phone</dt>
-          <dd>07963 043979</dd>
-          <dt>Email</dt>
+          <dt><img src="~assets/img/email.svg" alt="Envelope"> Email</dt>
           <dd><a href="mailto:hello@fishpercolator.co.uk">hello@fishpercolator.co.uk</a></dd>
-          <dt>Twitter</dt>
+          <dt><img src="~assets/img/phone.svg" alt="Phone"> Phone</dt>
+          <dd><a href="tel:+447963043979">07963 043979</a></dd>
+          <dt><img src="~assets/img/twitter.svg" alt="Twitter logo"> Twitter</dt>
           <dd><a href="https://twitter.com/fishpercolator" target="_blank">@fishpercolator</a></dd>
-          <dt>Facebook</dt>
+          <dt><img src="~assets/img/facebook.svg" alt="Thumbs up"> Facebook</dt>
           <dd><a href="https://www.facebook.com/fishpercolator/" target="_blank">fishpercolator</a></dd>
-          <dt>Blog (on Medium)</dt>
+          <dt><img src="~assets/img/medium.svg" alt="Medium logo"> Blog (on Medium)</dt>
           <dd><a href="https://medium.com/@fishpercolator" target="_blank">@fishpercolator</a></dd>
+          <dt><img src="~assets/img/address.svg" alt="Signpost"> Address</dt>
+          <dd><address><a href="http://duke-studios.com/" target="_blank">Duke Studios</a><br/>3 Sheaf Street<br/>Leeds LS10 1HD</address><p><em>Come visit us! <a href="http://sheafstcafeteria.com/" target="_blank">The café here</a> is amazing.</em></p></dd>
+          <dt><img src="~assets/img/company.svg" alt="Office block"> Company info</dt>
+          <dd>Fish Percolator Limited<br/>England &amp; Wales company #9617660<br/>VAT number GB 218804800</dd>
         </dl>
         <iframe id="map" :src="gmapsUrl" allowfullscreen></iframe>
       </div>
@@ -23,6 +25,9 @@
     <div id="form">
       <h2>or fill in this form</h2>
       <contact-form />
+    </div>
+    <div class="cta">
+      <router-link to="/">Back to home</router-link>
     </div>
   </div>
 </template>
@@ -57,12 +62,21 @@ export default {
       justify-content: space-between;
       dl {
         margin: 1em;
+        line-height: 1.3em;
         dt {
           margin-top: 1em;
           font-weight: bold;
+          img {
+            position: relative;
+            height: 1em;
+            top: 0.1em;
+          }
         }
         dd {
           margin: 0.1em 0;
+          address {
+            font-style: normal;
+          }
         }
       }
       #map {

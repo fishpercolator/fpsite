@@ -18,7 +18,7 @@ body {
   background: url(~assets/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: $black;
-  font-family: 'Oxygen', sans-serif;
+  font-family: $font;
   font-size: 18px;
   overflow-y: scroll; // force scrollbar to appear even on short pages
 }
