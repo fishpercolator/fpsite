@@ -21,7 +21,7 @@
       <router-link to="/about">See all</router-link>
     </div>
     <div id="clients" class="info">
-      <h2>Our clients &amp; partners</h2>
+      <h2>Our clients &amp; partners include</h2>
       <div class="logos">
         <client v-for="client in clients" :key="client.slug" v-bind="client" />
       </div>
