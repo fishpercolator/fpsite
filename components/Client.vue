@@ -1,6 +1,6 @@
 <template>
   <a class="client-box" :href="url" target="_blank">
-    <img :src="logo" :alt="logo_name"/>
+    <img v-lazy="logo" :src="$Lazyload.options.loading" :alt="logo_name"/>
     <h3>{{name}}</h3>
   </a>
 </template>

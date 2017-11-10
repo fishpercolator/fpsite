@@ -2,7 +2,7 @@
   <div id="home">
     <img src="~assets/img/logo.svg" id="logo" alt="Fish Percolator" />
     <div id="intro" class="info">
-      <img class="feature" src="~assets/img/home.png" alt="App running on an Android phone" />
+      <img class="feature" v-lazy="home_img_url" :src="$Lazyload.options.loading" alt="App running on an Android phone" />
       <h2>Helping startups get started</h2>
       <p>Fish Percolator is a software development house in Leeds, UK. We specialize in getting startups over the starting line.</p>
       <p>You bring the ideas and expertise in your field, and we'll build the technology you need to take your business to market.</p>
@@ -45,7 +45,13 @@ export default {
     client: Client,
     bullet: UspBullet
   },
-  data () { return {clients, usps} }
+  data () {
+    return {
+      clients,
+      usps,
+      home_img_url: require('~/assets/img/home.png')
+    }
+  }
 }
 </script>
 
