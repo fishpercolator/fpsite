@@ -3,31 +3,26 @@
     <img :src="image" :alt="img_desc" />
     <div>
       <h2>{{name}}</h2>
-      <markdown v-bind="markdownProps">{{description}}</markdown>
+      <div v-html="description" @click="handleLink"></div>
     </div>
   </div>
 </template>
 
 <script>
-import Markdown from 'vue-markdown'
-
 export default {
   props: ['slug', 'name', 'img_desc', 'description'],
-  components: {
-    markdown: Markdown
-  },
-  data () {
-    return {
-      markdownProps: {
-        anchorAttributes: {
-          target: '_blank'
-        }
-      }
-    }
-  },
   computed: {
     image () {
       return `/usps/${this.slug}.svg`
+    }
+  },
+  methods: {
+    // Make sure any internal links in the HTML are passed to the router
+    handleLink (e) {
+      if (e.target && e.target.tagName === 'A' && e.target.href && e.target.host === location.host) {
+        e.preventDefault()
+        this.$router.push(e.target.pathname)
+      }
     }
   }
 }
@@ -59,6 +54,7 @@ export default {
     color: $accent;
     margin-left: 0;
     margin-right: 0;
+    padding: 0 1rem;
   }
 }
 </style>
