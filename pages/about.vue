@@ -27,6 +27,7 @@ export default {
   @extend %page;
   .usp-detail {
     @extend %box;
+    padding-top: 1em;
     img {
       margin-bottom: 2em;
       @media (max-width: $mobile) {

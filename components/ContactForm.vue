@@ -106,7 +106,7 @@ export default {
       padding: 0.5em;
       font-size: 1em;
       margin: 0 0.5em 0.5em 0.5em;
-      cursor: pointer;
+      cursor: default;
       img {
         height: 1em;
       }

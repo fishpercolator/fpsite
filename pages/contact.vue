@@ -13,13 +13,13 @@
           <dt><img src="~assets/img/phone.svg" alt="Phone"> Phone</dt>
           <dd><a href="tel:+447963043979">07963 043979</a></dd>
           <dt><img src="~assets/img/twitter.svg" alt="Twitter logo"> Twitter</dt>
-          <dd><a href="https://twitter.com/fishpercolator" target="_blank">@fishpercolator</a></dd>
+          <dd><a href="https://twitter.com/fishpercolator" target="_blank" rel="noopener">@fishpercolator</a></dd>
           <dt><img src="~assets/img/facebook.svg" alt="Thumbs up"> Facebook</dt>
-          <dd><a href="https://www.facebook.com/fishpercolator/" target="_blank">fishpercolator</a></dd>
+          <dd><a href="https://www.facebook.com/fishpercolator/" target="_blank" rel="noopener">fishpercolator</a></dd>
           <dt><img src="~assets/img/medium.svg" alt="Medium logo"> Blog (on Medium)</dt>
-          <dd><a href="https://medium.com/@fishpercolator" target="_blank">@fishpercolator</a></dd>
+          <dd><a href="https://medium.com/@fishpercolator" target="_blank" rel="noopener">@fishpercolator</a></dd>
           <dt><img src="~assets/img/address.svg" alt="Signpost"> Address</dt>
-          <dd><address><a href="http://duke-studios.com/" target="_blank">Duke Studios</a><br/>3 Sheaf Street<br/>Leeds LS10 1HD</address><p><em>Come visit us! <a href="http://sheafstcafeteria.com/" target="_blank">The café here</a> is amazing.</em></p></dd>
+          <dd><address><a href="http://duke-studios.com/" target="_blank" rel="noopener">Duke Studios</a><br/>3 Sheaf Street<br/>Leeds LS10 1HD</address><p><em>Come visit us! <a href="http://sheafstcafeteria.com/" target="_blank" rel="noopener">The café here</a> is amazing.</em></p></dd>
           <dt><img src="~assets/img/company.svg" alt="Office block"> Company info</dt>
           <dd>Fish Percolator Limited<br/>England &amp; Wales company #9617660<br/>VAT number GB 218804800</dd>
         </dl>

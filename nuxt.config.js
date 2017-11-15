@@ -3,6 +3,9 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'en-GB'
+    },
     title: 'Fish Percolator',
     meta: [
       { charset: 'utf-8' },

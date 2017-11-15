@@ -15,13 +15,13 @@
     "slug": "testing",
     "name": "Regression testing",
     "img_desc": "Two percolators marked with a cross and a tick",
-    "description": "<p>Software isn't finished when the first version is delivered. Every release adds new features and functionality.</p><p>That's why regression testing is so important to us: we build automated tests into every iteration of a product so that you can be sure the <em>old</em> features are still working whenever we create new ones.</p><p><a href=\"https://medium.com/@fishpercolator/regression-testing-or-why-the-fastest-developers-might-not-be-the-best-ones-4c2992e37c03\" target=\"_blank\">You can read more about this on our blog</a>.</p>"
+    "description": "<p>Software isn't finished when the first version is delivered. Every release adds new features and functionality.</p><p>That's why regression testing is so important to us: we build automated tests into every iteration of a product so that you can be sure the <em>old</em> features are still working whenever we create new ones.</p><p><a href=\"https://medium.com/@fishpercolator/regression-testing-or-why-the-fastest-developers-might-not-be-the-best-ones-4c2992e37c03\" target=\"_blank\" rel=\"noopener\">You can read more about this on our blog</a>.</p>"
   },
   {
     "slug": "scalability",
     "name": "Horizontal scalability",
     "img_desc": "A wide percolator with an eel",
-    "description": "<p>When you're running a business you need to know it can cope as your userbase grows. Software designed on a small scale is often useless once you reach thousands of users and results in costly rewrites.</p><p>We build web applications to the <a href=\"https://12factor.net/\" target=\"_blank\">Twelve-Factor specification</a>, which means they are designed to grow as your userbase grows, without the need for rewriting. Applications built to this specification are also highly portable, and can equally run on the tiniest virtual server or a scalable cloud like <a href=\"https://www.heroku.com/\" target=\"_blank\">Heroku</a>.</p>"
+    "description": "<p>When you're running a business you need to know it can cope as your userbase grows. Software designed on a small scale is often useless once you reach thousands of users and results in costly rewrites.</p><p>We build web applications to the <a href=\"https://12factor.net/\" target=\"_blank\" rel=\"noopener\">Twelve-Factor specification</a>, which means they are designed to grow as your userbase grows, without the need for rewriting. Applications built to this specification are also highly portable, and can equally run on the tiniest virtual server or a scalable cloud like <a href=\"https://www.heroku.com/\" target=\"_blank\" rel=\"noopener\">Heroku</a>.</p>"
   },
   {
     "slug": "iterative",

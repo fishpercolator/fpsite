@@ -41,6 +41,7 @@ export default {
   text-align: center;
   transition: all 0.2s ease-in-out;
   margin: 1em;
+  cursor: zoom-in;
   @media (max-width: $mobile) {
     margin: 1em 0em;
   }
