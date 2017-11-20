@@ -14,6 +14,7 @@
     "deploy": "push-dir --remote=git@github.com:fishpercolator/fishpercolator.github.io.git --branch=master --dir=dist"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^2.0.2",
     "axios": "^0.17.0",
     "nuxt": "^1.0.0-rc11",
     "vue-lazyload": "^1.1.4"

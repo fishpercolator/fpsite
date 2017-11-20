@@ -47,10 +47,10 @@ export default {
   methods: {
     changeProject (slug) {
       this.currentSlug = slug
-      history.replaceState({}, null, `/project/${slug}`)
+      window.history.replaceState({}, null, `/project/${slug}`)
     }
   },
-  created () { if (!this.currentSlug) this.changeProject(projects[0].slug) }
+  mounted () { if (!this.currentSlug) this.changeProject(projects[0].slug) }
 }
 </script>
 

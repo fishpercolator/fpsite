@@ -24,6 +24,7 @@ module.exports = {
   ** Nuxt modules & plugins
   */
   modules: [
+    '@nuxtjs/pwa'
   ],
   plugins: [
     '~/plugins/globals.js'
