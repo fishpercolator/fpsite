@@ -17,19 +17,21 @@
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
-body {
+html {
   background-color: $bg;
   background: url(~assets/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+body {
   color: $black;
   font-family: $font;
   font-size: 18px;
-  overflow-y: scroll; // force scrollbar to appear even on short pages
 }
 
 a {
