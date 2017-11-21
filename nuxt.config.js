@@ -1,25 +1,43 @@
+var bg = '#bbf3f4';
+var theme = '#660080';
+var name = 'Fish Percolator';
+var description = 'Helping startups get started - software development house in Leeds, UK';
+var lang = 'en-GB';
+
 module.exports = {
+  /*
+  ** Manifest
+  */
+  manifest: {
+    name: name,
+    short_name: name,
+    lang: lang,
+    background_color: bg,
+    theme_color: theme,
+    description: description,
+  },
   /*
   ** Headers of the page
   */
   head: {
     htmlAttrs: {
-      lang: 'en-GB'
+      lang: lang
     },
-    title: 'Fish Percolator',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Fish Percolator site' }
-    ],
+    title: name,
     link: [
       { rel: 'shortcut icon', href: '/favicon.ico' }
     ]
   },
   /*
+  ** Override metadata from the meta module
+  */
+  meta: {
+    description: description
+  },
+  /*
   ** Customize the progress bar color
   */
-  loading: { color: '#660080' },
+  loading: { color: theme },
   /*
   ** Nuxt modules & plugins
   */

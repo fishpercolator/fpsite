@@ -23,6 +23,7 @@ html, body {
 }
 
 body {
+  background-color: $bg;
   background: url(~assets/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   color: $black;
