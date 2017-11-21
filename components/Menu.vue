@@ -42,6 +42,7 @@ $start-rot : 190deg;
   right: 0;
   top: 0;
   overflow: hidden;
+  pointer-events: none;
 }
 
 nav {
