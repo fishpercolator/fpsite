@@ -42,7 +42,8 @@ module.exports = {
   ** Nuxt modules & plugins
   */
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', {id: 'UA-66641490-1'}]
   ],
   plugins: [
     '~/plugins/globals.js'
