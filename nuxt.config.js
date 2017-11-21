@@ -67,6 +67,6 @@ module.exports = {
   },
   generate: {
     // Generate a route for each project
-    routes: require('./assets/projects.json').map((p) => `/project/${p.slug}`)
+    routes: ['/404'].concat(require('./assets/projects.json').map((p) => `/project/${p.slug}`))
   }
 }
