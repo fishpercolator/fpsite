@@ -111,9 +111,6 @@ export default {
         }
         &.current {
           font-weight: bold;
-          a::before {
-            content: '• ';
-          }
         }
       }
     }
