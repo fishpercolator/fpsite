@@ -1,5 +1,3 @@
-Adapted from https://codepen.io/bennettfeely/pen/qRJOZJ
-
 <template>
   <div id="logo-container" :class="{invisible: $route.fullPath == '/'}">
     <router-link to="/"><img src="~assets/img/logohoriz.svg" alt="Fish Percolator logo" /></router-link>

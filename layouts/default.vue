@@ -3,6 +3,7 @@
     <nav-menu/>
     <logo />
     <nuxt/>
+    <contact-banner/>
   </div>
 </template>
 

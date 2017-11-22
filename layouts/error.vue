@@ -19,6 +19,7 @@
         <router-link to="/">Go home</router-link>
       </div>
     </div>
+    <contact-banner/>
   </div>
 </template>
 
