@@ -7,7 +7,7 @@
           <li v-for="project in projects" :class="{current: currentSlug === project.slug}"><a @click.prevent="changeProject(project.slug)" :href="`/project/${project.slug}`">{{project.name}}</a></li>
         </ul>
         <div id="project" v-if="current">
-          <button id="opener" @click="menuOpen = !menuOpen"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
+          <button id="opener" @click="menuOpen = !menuOpen" :aria-label="menuOpen ? 'close menu':'open menu'"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
           <img id="projectheader" v-lazy="currentImage" src="$Lazyload.options.loading" :alt="current.name"/>
           <h2>{{current.name}}</h2>
           <div class="content" v-html="current.content"></div>

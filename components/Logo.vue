@@ -19,7 +19,8 @@ Adapted from https://codepen.io/bennettfeely/pen/qRJOZJ
   img {
     margin-top: 2.5rem;
     margin-left: 1rem;
-    height: 3rem;
+    max-height: 3rem;
+    max-width: 60vw;
   }
 }
 </style>

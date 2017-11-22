@@ -75,7 +75,7 @@ export default {
     img {
       display: block;
       margin: 0 auto 1em auto;
-      max-height: 3.5em;
+      max-height: 3em;
     }
   }
   .info {

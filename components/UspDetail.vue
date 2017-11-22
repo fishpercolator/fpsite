@@ -32,13 +32,15 @@ export default {
 @import '~assets/settings';
 
 .usp-detail {
+  display: flex;
+  justify-content: center;
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
   img {
-    height: 14em;
-    width: 12em;
+    width: 14em;
     object-fit: scale-down;
-    float: left;
-    margin-right: 1em;
-    margin-bottom: 10em;
+    margin: 1em;
     @media (max-width: $mobile) {
       display: none;
     }
