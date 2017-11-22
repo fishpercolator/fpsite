@@ -1,5 +1,5 @@
 <template>
-  <a class="client-box" :href="url" target="_blank" rel="noopener">
+  <a class="client-box" :href="url">
     <img v-lazy="logo" :src="$Lazyload.options.loading" :alt="logo_name"/>
     <h3>{{name}}</h3>
   </a>

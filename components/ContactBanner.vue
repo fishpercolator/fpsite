@@ -11,11 +11,11 @@
       </div>
       <div>
         <img src="~assets/img/twitter-w.svg" alt="Twitter logo" title="Twitter">
-        <a href="https://twitter.com/fishpercolator" target="_blank" rel="noopener">@fishpercolator</a>
+        <a href="https://twitter.com/fishpercolator">@fishpercolator</a>
       </div>
       <div>
         <img src="~assets/img/medium-w.svg" alt="Medium logo" title="Blog on Medium">
-        <a href="https://medium.com/@fishpercolator" target="_blank" rel="noopener">Blog</a>
+        <a href="https://medium.com/@fishpercolator">Blog</a>
       </div>
     </div>
   </div>

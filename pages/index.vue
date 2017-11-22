@@ -7,7 +7,7 @@
       <p>Fish Percolator is a software development house in Leeds, UK. We specialize in getting startups over the starting line.</p>
       <p>You bring the ideas and expertise in your field, and we'll build the technology you need to take your business to market.</p>
       <p>Unlike some other firms, we're with you all the way: our software is designed to be scalable and maintainable, and we can empower you with the tools and skills you need to keep your product alive.</p>
-      <a class="award" href="http://www.nationalfreelancersday.com/blog/finalists-announced-ipse-freelancer-year-awards-2017" target="_blank" rel="noopener"><img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire" /></a>
+      <a class="award" href="http://www.nationalfreelancersday.com/blog/finalists-announced-ipse-freelancer-year-awards-2017"><img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire" /></a>
     </div>
     <div class="cta">
       <router-link to="/contact">Get in touch</router-link>

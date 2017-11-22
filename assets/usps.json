@@ -15,13 +15,13 @@
     "slug": "testing",
     "name": "Regression testing",
     "img_desc": "Two percolators marked with a cross and a tick",
-    "description": "<p>Software isn't finished when the first version is delivered. Every release adds new features and functionality.</p><p>That's why regression testing is so important to us: we build automated tests into every iteration of a product so that you can be sure the <em>old</em> features are still working whenever we create new ones.</p><p><a href=\"https://medium.com/@fishpercolator/regression-testing-or-why-the-fastest-developers-might-not-be-the-best-ones-4c2992e37c03\" target=\"_blank\" rel=\"noopener\">You can read more about this on our blog</a>.</p>"
+    "description": "<p>Software isn't finished when the first version is delivered. Every release adds new features and functionality.</p><p>That's why regression testing is so important to us: we build automated tests into every iteration of a product so that you can be sure the <em>old</em> features are still working whenever we create new ones.</p><p><a href=\"https://medium.com/@fishpercolator/regression-testing-or-why-the-fastest-developers-might-not-be-the-best-ones-4c2992e37c03\">You can read more about this on our blog</a>.</p>"
   },
   {
     "slug": "scalability",
     "name": "Horizontal scalability",
     "img_desc": "A wide percolator with an eel",
-    "description": "<p>When you're running a business you need to know it can cope as your userbase grows. Software designed on a small scale is often useless once you reach thousands of users and results in costly rewrites.</p><p>We build web applications to the <a href=\"https://12factor.net/\" target=\"_blank\" rel=\"noopener\">Twelve-Factor specification</a>, which means they are designed to grow as your userbase grows, without the need for rewriting. Applications built to this specification are also highly portable, and can equally run on the tiniest virtual server or a scalable cloud like <a href=\"https://www.heroku.com/\" target=\"_blank\" rel=\"noopener\">Heroku</a>.</p>"
+    "description": "<p>When you're running a business you need to know it can cope as your userbase grows. Software designed on a small scale is often useless once you reach thousands of users and results in costly rewrites.</p><p>We build web applications to the <a href=\"https://12factor.net/\">Twelve-Factor specification</a>, which means they are designed to grow as your userbase grows, without the need for rewriting. Applications built to this specification are also highly portable, and can equally run on the tiniest virtual server or a scalable cloud like <a href=\"https://www.heroku.com/\">Heroku</a>.</p>"
   },
   {
     "slug": "iterative",
@@ -39,7 +39,7 @@
     "slug": "trackrecord",
     "name": "Proven success stories",
     "img_desc": "A percolator winning the gold medal in a sporting event",
-    "description": "<p>A swanky website isn't going to cut it when you're picking a developer for your next big business idea. You need evidence that we are who we say we are.</p><p>And for that, please <a href=\"/projects\">take a look at our extensive portfolio</a>. We've done work from the smallest tweaks through to entire applications that back tech businesses; work grounded in over 15 years' industry experience.</p><p>In 2017, main developer Rich was chosen as one of ten finalists in the <a href=\"http://www.nationalfreelancersday.com/blog/finalists-announced-ipse-freelancer-year-awards-2017\" target=\"_blank\" rel=\"noopener\">IPSE Freelancer of the Year award</a>.</p><blockquote>\"Rich is unlike any other developer we have ever worked with, in that he has that rare combination of technical excellence, crystal clear communication and customer empathy.\"<br/> — David Rose, CEO of <a href=\"/project/noiiz\">Noiiz</a></blockquote>"
+    "description": "<p>A swanky website isn't going to cut it when you're picking a developer for your next big business idea. You need evidence that we are who we say we are.</p><p>And for that, please <a href=\"/projects\">take a look at our extensive portfolio</a>. We've done work from the smallest tweaks through to entire applications that back tech businesses; work grounded in over 15 years' industry experience.</p><p>In 2017, main developer Rich was chosen as one of ten finalists in the <a href=\"http://www.nationalfreelancersday.com/blog/finalists-announced-ipse-freelancer-year-awards-2017\">IPSE Freelancer of the Year award</a>.</p><blockquote>\"Rich is unlike any other developer we have ever worked with, in that he has that rare combination of technical excellence, crystal clear communication and customer empathy.\"<br/> — David Rose, CEO of <a href=\"/project/noiiz\">Noiiz</a></blockquote>"
   },
   {
     "slug": "conscience",
