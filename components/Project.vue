@@ -32,8 +32,18 @@ export default {
     }
   },
   head () {
-    return {
-      title: this.currentSlug ? this.current.name : 'Portfolio'
+    if (this.currentSlug) {
+      return {
+        title: this.current.name,
+        meta: [
+          {name: 'description', content: this.current.desc},
+          {name: 'og:description', content: this.current.desc}
+        ]
+      }
+    } else {
+      return {
+        title: 'Portfolio'
+      }
     }
   },
   data () { return {projects: projects, currentSlug: this.slug, menuOpen: false} },

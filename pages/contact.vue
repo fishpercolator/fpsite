@@ -37,8 +37,13 @@ import ContactForm from '../components/ContactForm.vue'
 
 export default {
   head () {
+    var desc = 'How to get in touch, find us on social media, or read our blog.'
     return {
-      title: 'Contact'
+      title: 'Contact',
+      meta: [
+        {name: 'description', content: desc},
+        {name: 'og:description', content: desc}
+      ]
     }
   },
   data () {

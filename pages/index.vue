@@ -47,9 +47,14 @@ export default {
     bullet: UspBullet
   },
   head () {
+    var desc = 'Helping startups get started. Web app and software development house in Leeds, UK.'
     return {
       title: 'Fish Percolator',
-      titleTemplate: undefined
+      titleTemplate: undefined,
+      meta: [
+        {name: 'description', content: desc},
+        {name: 'og:description', content: desc}
+      ]
     }
   },
   data () {

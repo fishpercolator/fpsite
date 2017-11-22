@@ -1,7 +1,5 @@
-var bg = '#bbf3f4';
 var theme = '#660080';
 var name = 'Fish Percolator';
-var description = 'Helping startups get started - software development house in Leeds, UK';
 var lang = 'en-GB';
 
 module.exports = {
@@ -12,9 +10,9 @@ module.exports = {
     name: name,
     short_name: name,
     lang: lang,
-    background_color: bg,
+    background_color: '#bbf3f4',
     theme_color: theme,
-    description: description,
+    description: 'Helping startups get started - software development house in Leeds, UK',
   },
   /*
   ** Headers of the page
@@ -35,6 +33,7 @@ module.exports = {
   ** Disable some of the tags put there by the meta module
   */
   meta: {
+    description: undefined,
     ogTitle: undefined,
     ogDescription: undefined
   },
