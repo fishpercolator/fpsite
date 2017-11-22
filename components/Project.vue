@@ -8,7 +8,7 @@
         </ul>
         <div id="project" v-if="current">
           <button id="opener" @click="menuOpen = !menuOpen" :aria-label="menuOpen ? 'close menu':'open menu'"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
-          <img id="projectheader" v-lazy="currentImage" src="$Lazyload.options.loading" :alt="current.name"/>
+          <img id="projectheader" v-lazy="currentImage" :src="$Lazyload.options.loading" :alt="current.name"/>
           <h2>{{current.name}}</h2>
           <div class="content" v-html="current.content"></div>
           <div class="nextprev">
@@ -31,13 +31,20 @@ export default {
       required: false
     }
   },
+  head () {
+    return {
+      title: this.currentSlug ? this.current.name : 'Portfolio'
+    }
+  },
   data () { return {projects: projects, currentSlug: this.slug, menuOpen: false} },
   computed: {
     current () {
       if (this.currentSlug) {
         var idx = projects.findIndex((p) => this.currentSlug === p.slug)
-        projects[idx].index = idx
-        return projects[idx]
+        if (projects[idx]) {
+          projects[idx].index = idx
+          return projects[idx]
+        }
       }
     },
     next () { return projects[this.current.index + 1] },

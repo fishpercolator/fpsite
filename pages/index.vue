@@ -46,6 +46,12 @@ export default {
     client: Client,
     bullet: UspBullet
   },
+  head () {
+    return {
+      title: 'Fish Percolator',
+      titleTemplate: undefined
+    }
+  },
   data () {
     return {
       clients,

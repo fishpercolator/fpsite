@@ -17,6 +17,11 @@ export default {
   components: {
     'usp-detail': UspDetail
   },
+  head () {
+    return {
+      title: 'About'
+    }
+  },
   data () { return {usps} }
 }
 </script>

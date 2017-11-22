@@ -23,21 +23,21 @@ module.exports = {
     htmlAttrs: {
       lang: lang
     },
-    title: name,
     link: [
       { rel: 'shortcut icon', href: '/favicon.ico' }
     ]
   },
   /*
-  ** Override metadata from the meta module
-  */
-  meta: {
-    description: description
-  },
-  /*
   ** Customize the progress bar color
   */
   loading: { color: theme },
+  /*
+  ** Disable some of the tags put there by the meta module
+  */
+  meta: {
+    ogTitle: undefined,
+    ogDescription: undefined
+  },
   /*
   ** Nuxt modules & plugins
   */

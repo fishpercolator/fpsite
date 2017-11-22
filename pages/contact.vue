@@ -36,6 +36,11 @@
 import ContactForm from '../components/ContactForm.vue'
 
 export default {
+  head () {
+    return {
+      title: 'Contact'
+    }
+  },
   data () {
     return {
       gmapsKey: 'AIzaSyBWzXMR3j8Zc4mDBYIBHpw7DDLNQo12Qtc'
