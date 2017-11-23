@@ -31,19 +31,27 @@
   },
   {
     "slug": "sampleism",
-    "name": "Sampleism DB"
+    "name": "Sampleism DB",
+    "desc": "Migration of database & data from one cloud provider to another",
+    "content": "<p>Online store <a href=\"https://www.sampleism.com/\"><strong>Sampleism</strong></a> hired Fish Percolator to work on a very technical problem. They were building a new website using conventional technologies and needed to get all the data out of their existing platform so it could be loaded into their new one.</p><p>The previous platform was based on the proprietary NoSQL technology of one cloud provider, and a complex migration app needed to be developed in Rails to fully extract all of this data into a more conventional SQL format that could be used on the new cloud provider.</p><p>The finer details of this backend project are of course internal to Sampleism, but please let us know if we can help you with any similar projects!</p>"
   },
   {
     "slug": "recolor",
-    "name": "Recolor.ink"
+    "name": "Recolor.ink",
+    "desc": "Tiny web app for recolouring vector graphics with drag and drop, written in Crystal",
+    "content": "<p>We built <a href=\"https://recolor.ink/\"><strong>Recolor.ink</strong></a> to solve a frequent problem we were having when building software: vector graphics for user interfaces are usually black, and many user interfaces need them to be other colours.</p><p>This tiny web app allows you to pick a colour, then drag and drop your black images and download the newly recoloured versions.</p><p>Features of Recolor.ink include:</p><ul><li>Developed using the lightning-fast <a href=\"https://crystal-lang.org/\">Crystal</a> programming language and the <a href=\"http://kemalcr.com/\">Kemal</a> web framework.</li><li>Webpack-based JavaScript frontend that uses <a href=\"http://www.dropzonejs.com/\">Dropzone</a> and <a href=\"http://bgrins.github.io/spectrum/\">Spectrum</a></li><li>No storage backend for the uploaded files - they're delivered in-browser using data URIs.</li></ul><p class=\"cta\"><a href=\"https://recolor.ink/\">Check out Recolor.ink</a></p>"
   },
   {
     "slug": "revelry",
-    "name": "Revelry"
+    "name": "Revelry",
+    "desc": "Toolkit for building presentations quickly using Reveal.js",
+    "content": "<p><strong>Revelry</strong> is a toolkit for making presentations in code using the amazing <a href=\"https://revealjs.com/\">Reveal.js</a> by Hakim El Hattab. We built it because we really dislike PowerPoint and wanted something as pleasant as MkDocs or LaTeX for quickly coding up flashy presentations.</p><p class=\"cta\"><a href=\"https://medium.com/@fishpercolator/death-to-powerpoint-presentations-in-code-1b5e30f16b3a\">Read the blog post about it</a></p><p class=\"cta\"><a href=\"https://github.com/fishpercolator/revelry/blob/master/README.md\">Get started with the README</a></p><p>To learn more about Revelry, visit <a href=\"https://storage.fishpercolator.co.uk/presentations/revelry/\"><strong>this introductory presentation</strong></a> written using Revelry (and its <a href=\"https://github.com/fishpercolator/revelry-demo/\">source code</a>)</p><blockquote><p>I needed a way to use Reveal.js for a large corporate project that would make it easy to add or modify small sections without the code becoming too unwieldy. Since the content was being changed frequently, I was also hoping to use an HTML templating system like Jade, and SASS compilation to speed up development.</p><p>Revelry to the rescue! One command in the terminal to build the project instantly. I could never have done it without Revelry. And Rich was super helpful by adding in some features which helped make this project a success.</p><p>– <strong>Maureen Dunlap</strong>, Sr. Front End Developer, VIF International Education</p></blockquote>"
   },
   {
     "slug": "william-hill-cloud",
-    "name": "William Hill Cloud"
+    "name": "William Hill Cloud",
+    "desc": "Helping develop an internal cloud for the major gambling company",
+    "content": "<p>Fish Percolator was on contract to <a href=\"https://www.williamhillplc.com/\"><strong>William Hill</strong></a> in 2015, helping to develop the William Hill Cloud software, a proprietary application deployment platform used throughout the organization.</p><p>Much of this work was spent integrating the backend of William Hill Cloud with <a href=\"http://fog.io/\">Fog.io</a>, the Ruby cloud services library, with many contributions back to the project, resulting in Fish Percolator's Rich <a href=\"https://github.com/fog/fog/blob/master/CHANGELOG.md\">being named the MVP of Fog.io version 1.37</a>.</p><p>Job management was done using Resque, and during this time we contributed a gem – <a href=\"https://github.com/William-Hill-Online/resque-status-future\">resque-status-future</a> – that adds <em>future</em> support to the resque-status library.</p><blockquote><p>\"Rich worked in my team for around 6 months and proved himself to be an exceptional developer, with a keen eye for detail. He produced good, well tested code and in the course of his brief time here contributed patches to a number of open source projects, notably the Fog.io project that merged in his various patches in short order. I would highly recommend Rich.\"</p><p>– <strong>Anthony Roy</strong>, Development Lead</p></blockquote>"
   },
   {
     "slug": "wordpress-plugins",
