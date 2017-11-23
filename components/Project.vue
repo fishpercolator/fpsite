@@ -1,6 +1,6 @@
 <template>
   <div id="portfolio">
-    <div>
+    <div class="panel">
       <h1 class="flush">Portfolio</h1>
       <div id="projects" :class="{menuopen: menuOpen}">
         <ul id="projectlist">
@@ -19,6 +19,7 @@
         </div>
       </div>
     </div>
+    <div class="cta"><router-link to="/contact">Contact us</router-link></div>
   </div>
 </template>
 
@@ -75,7 +76,7 @@ export default {
 @import "../assets/mixins";
 #portfolio {
   @extend %page;
-  > div  {
+  > div.panel  {
     @extend %box;
   }
   #projects {
@@ -129,6 +130,21 @@ export default {
         height: 271px;
         object-fit: cover;
       }
+      
+      blockquote {
+        padding: 0.5em 0;
+        background-color: transparentize($title, 0.9);
+        border-radius: 5px;
+        font-size: 0.9em;
+      }
+      
+      img.logo {
+        float: right;
+        width: 15em;
+        max-width: 35vw;
+        margin: 0 1em 1em 1em;
+      }
+      
       .nextprev {
         display: flex;
         padding: 1em;

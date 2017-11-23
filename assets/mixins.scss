@@ -20,7 +20,7 @@
 }
 
 %box {
-  background: linear-gradient(180deg, transparentize($white, 0.7), $white);
+  background: linear-gradient(180deg, transparentize($white, 0.5), $white);
   border-radius: 0.5rem;
   width: 100vw;
   max-width: 60rem;
@@ -37,6 +37,25 @@
   }
   p {
     padding: 0 $space;
+  }
+  ul {
+    padding: 0 $space 0 $space*3;
+    li {
+      margin-bottom: 0.5em;
+      list-style-type: square;
+    }
+  }
+  p.cta {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    a {
+      background: $title;
+      font-size: 1em;
+      &:hover {
+        background: linear-gradient(darken($title, 9), $title);
+      }
+    }
   }
   img.feature {
     float: right;
