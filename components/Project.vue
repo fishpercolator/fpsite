@@ -96,6 +96,7 @@ export default {
       justify-content: flex-start;
       li {
         list-style-type: none;
+        margin: 0;
         padding: 0;
         text-align: right;
         display: flex;
