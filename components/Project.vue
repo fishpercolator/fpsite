@@ -3,11 +3,11 @@
     <div class="panel">
       <h1 class="flush">Portfolio</h1>
       <div id="projects" :class="{menuopen: menuOpen}">
-        <ul id="projectlist">
+        <ul id="projectlist" v-touch:swipe.left="swipePanel">
           <li v-for="project in projects" :class="{current: currentSlug === project.slug}"><a @click.prevent="changeProject(project.slug)" :href="`/project/${project.slug}`">{{project.name}}</a></li>
         </ul>
         <div id="project" v-if="current">
-          <button id="opener" @click="menuOpen = !menuOpen" :aria-label="menuOpen ? 'close menu':'open menu'"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
+          <button id="opener" @click="menuOpen = !menuOpen" v-touch:swipe="swipePanel" :aria-label="menuOpen ? 'close menu':'open menu'"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
           <img id="projectheader" v-lazy="currentImage" :src="$Lazyload.options.loading" :alt="current.name"/>
           <h2>{{current.name}}</h2>
           <div class="content" v-html="current.content"></div>
@@ -66,6 +66,16 @@ export default {
     changeProject (slug) {
       this.currentSlug = slug
       window.history.replaceState({}, null, `/project/${slug}`)
+    },
+    swipePanel (direction) {
+      switch (direction) {
+        case 'left':
+          this.menuOpen = false
+          break
+        case 'right':
+          this.menuOpen = true
+          break
+      }
     }
   },
   mounted () { if (!this.currentSlug) this.changeProject(projects[0].slug) }
@@ -153,17 +163,30 @@ export default {
       }
       button#opener {
         display: none;
+        @keyframes little-bounce {
+          0% { width: 2.5rem; }
+          50% { width: 2.8rem; }
+          100% { width: 2.5rem; }
+        }
         @media (max-width: $mobile) {
           display: block;
           position: absolute;
-          top: 50vh;
-          height: 3em;
-          line-height: 2em;
+          top: calc(50vh - 3rem);
+          font-size: 1.5em;
+          height: 6rem;
+          width: 2.5rem;
+          line-height: 6rem;
+          text-align: right;
           background-color: $title;
           color: $white;
           border: 1px solid $white;
           border-left: none;
           border-radius: 0 5px 5px 0;
+          animation-name: little-bounce;
+          animation-duration: 0.5s;
+          animation-delay: 0.5s;
+          animation-iteration-count: 2;
+          animation-timing-function: ease-out;
           &:focus {
             outline: none;
           }

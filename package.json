@@ -18,7 +18,8 @@
     "@nuxtjs/pwa": "^2.0.2",
     "axios": "^0.17.0",
     "nuxt": "^1.0.0-rc11",
-    "vue-lazyload": "^1.1.4"
+    "vue-lazyload": "^1.1.4",
+    "vue2-touch-events": "^0.2.3"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
