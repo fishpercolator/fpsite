@@ -55,14 +55,20 @@
   },
   {
     "slug": "wordpress-plugins",
-    "name": "WordPress plugins"
+    "name": "WordPress plugins",
+    "desc": "Fixing up issues or missing functionality in third-party plugins",
+    "content": "<p>We've been hired a number of times by our neighbours <a href=\"https://madebyanalogue.co.uk/\"><strong>Analogue</strong></a> to make some technical changes to WordPress plugins that they've been using with their clients' websites.</p><p>These changes have included:</p><ul><li>Deep integration of the Events Manager plugin into the user interface of the <a href=\"http://leedsindiefood.co.uk/\">Leeds Indie Food</a> website.</li><li>Various changes to the Booked plugin to make it match the booking needs of <a href=\"https://www.theginstitute.com/\">The Ginstitute</a>.</li><li>Removing/tweaking unexpected UI in the Pinpoint plugin used by <a href=\"https://the-distillery.london/\">The Distillery</a>.</li></ul><p>If you have a misbehaving plugin in any content-management system (not just WordPress), we'd be happy to take a look at fixing it up for you.</p>"
   },
   {
     "slug": "fpsite",
-    "name": "This website"
+    "name": "This website",
+    "desc": "A Vue.js showcase following internet best practices",
+    "content": "<p>When we first started, we had a WordPress website like everyone else out there. But that didn't seem a very <em>Fish Percolator</em> thing to do, so we built this website you're looking at.</p><p>The Fish Percolator website, as well as having a unique look, is a showcase of modern JavaScript and internet best practices. Its features include:</p><ul><li>Built entirely using the amazing <a href=\"https://vuejs.org/\">Vue.js</a> JavaScript framework, which knocks React and friends out of the park.</li><li>Statically generated as a <a href=\"https://nuxtjs.org/\">Nuxt</a> application, and hosted on <a href=\"https://pages.github.com/\">GitHub Pages</a> to take advantage of their CDN and http/2 support, and to allow it to be crawled .</li><li>Full adherence to modern web standards and accessibility, with a 100/95/100/100 score on <a href=\"https://developers.google.com/web/tools/lighthouse/\">Google Lighthouse</a>.</li><li>A fancy radial menu control, adapted to Vue from <a href=\"https://codepen.io/bennettfeely/pen/qRJOZJ\">a concept by Bennett Feely</a>.</li><li>Auto-generation of the multi-tabbed portfolio page from a JSON config file.</a></li><li>A <a href=\"https://developers.google.com/web/progressive-web-apps/\">PWA</a>, allowing it to be installed as an app on modern Android devices for offline browsing.</li></ul><p class=\"cta\"><a href=\"https://github.com/fishpercolator/fpsite\">Browse the source code</a></p>"
   },
   {
     "slug": "community",
-    "name": "Open source"
+    "name": "Open source",
+    "desc": "Examples of code we've contributed to the community",
+    "content": "<p>We're huge fans of the <a href=\"https://opensource.org/\"><strong>open source</strong></a> movement, and we use open source code every single day we are building software.</p><p>Open source only works when people give back, and we give back as often as we can. Some of the contributions we're most proud of include:</p><ul><li>Many contributions to <a href=\"http://fog.io/\">fog.io</a> that resulted in Rich being named the project's MVP for release 1.37</li><li><a href=\"https://github.com/codegram/spinach/pull/194\">Adding an audit mode to the Spinach testing tool</a></li><li><a href=\"https://github.com/thoughtbot/administrate/pull/971\">Adding authorization features to the Administrate library</a></li><li><a href=\"https://github.com/thoughtbot/administrate/pull/1020\">Adding support for editing polymorphic fields to Administrate</a></li><li><a href=\"https://github.com/rails/rails/pull/31082\">A small but significant contribution to the core of Rails itself</a></li><li><a href=\"https://rubygems.org/gems/administrate-field-lat_lng\">A gem that adds latitude and longitude field types to Administrate</li><li><a href=\"https://github.com/rcaelers/workrave/pull/73\">Fixing a Linux-specific issue with Workrave</a>, a C++ app that helps prevent RSI</li></ul><p class=\"cta\"><a href=\"https://github.com/pedantic-git\">Check out Rich on GitHub</a></p>"
   }
 ]

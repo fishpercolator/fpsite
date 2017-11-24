@@ -8,7 +8,7 @@ module.exports = {
   */
   manifest: {
     name: name,
-    short_name: name,
+    short_name: 'Fish Perco',
     lang: lang,
     background_color: '#bbf3f4',
     theme_color: theme,
