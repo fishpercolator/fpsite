@@ -33,7 +33,7 @@ export default {
     }
   },
   head () {
-    if (this.currentSlug) {
+    if (this.current) {
       return {
         title: this.current.name,
         meta: [
@@ -78,7 +78,7 @@ export default {
       }
     }
   },
-  mounted () { if (!this.currentSlug) this.changeProject(projects[0].slug) }
+  mounted () { if (!this.current) this.changeProject(projects[0].slug) }
 }
 </script>
 
