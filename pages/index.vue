@@ -31,7 +31,7 @@
       <router-link to="/projects">View our portfolio</router-link>
     </div>
     <div id="tech" class="info">
-      <h2>Tech we love includes</h2>
+      <h2>Tech we love</h2>
       <div class="logos">
         <tech-logo v-for="tech in techs" :key="tech.slug" v-bind="tech" />
       </div>
