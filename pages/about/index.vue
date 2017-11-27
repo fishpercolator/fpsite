@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import usps from '../assets/usps.json'
-import UspDetail from '../components/UspDetail.vue'
+import usps from '../../assets/usps.json'
+import UspDetail from '../../components/UspDetail.vue'
 
 export default {
   name: 'about',

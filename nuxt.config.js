@@ -66,7 +66,14 @@ module.exports = {
     },
   },
   generate: {
-    // Generate a route for each project
-    routes: ['/404'].concat(require('./assets/projects.json').map((p) => `/project/${p.slug}`))
+    routes: [
+      // 404 page is static on GitHub Pages
+      '/404', 
+      // Pages that existed on the old site and are redirects now
+      '/project/mapsheet-working-title', '/project/gsoh', '/project/jelly',
+      '/services/software-from-scratch', '/services/software-consultancy',
+      '/services/business-technology'
+      // One route for each project
+    ].concat(require('./assets/projects.json').map((p) => `/project/${p.slug}`))
   }
 }

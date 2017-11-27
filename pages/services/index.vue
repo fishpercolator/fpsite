@@ -1,3 +1,6 @@
+<template>
+</template>
+
 <script>
 // Was URL on old FP site - redirect to closest equivalent
 export default {
