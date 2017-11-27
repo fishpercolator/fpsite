@@ -30,21 +30,33 @@
     <div class="cta">
       <router-link to="/projects">View our portfolio</router-link>
     </div>
+    <div id="tech" class="info">
+      <h2>Tech we love includes</h2>
+      <div class="logos">
+        <tech-logo v-for="tech in techs" :key="tech.slug" v-bind="tech" />
+      </div>
+    </div>
+    <div class="cta">
+      <router-link to="/contact">Contact us</router-link>
+    </div>
   </div>
 </template>
 
 <script>
 import clients from '../assets/clients.json'
 import usps from '../assets/usps.json'
+import techs from '../assets/techs.json'
 
 import Client from '../components/Client.vue'
 import UspBullet from '../components/UspBullet.vue'
+import TechLogo from '../components/TechLogo.vue'
 
 export default {
   name: 'home',
   components: {
     client: Client,
-    bullet: UspBullet
+    bullet: UspBullet,
+    'tech-logo': TechLogo
   },
   head () {
     var desc = 'Helping startups get started. Web app and software development house in Leeds, UK.'
@@ -61,6 +73,7 @@ export default {
     return {
       clients,
       usps,
+      techs,
       home_img_url: require('~/assets/img/home.png'),
       award_img_url: require('~/assets/img/award.svg')
     }
@@ -92,11 +105,15 @@ export default {
   .info {
     @extend %box;
   }
-  #clients .logos, #usps .bullets {
+  #clients .logos, #usps .bullets, #tech .logos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  #tech .logos {
+    padding: 0.5em;
+    justify-content: center;
   }
 }
 </style>

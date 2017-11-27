@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Rails",
+    "slug": "rails",
+    "url": "http://rubyonrails.org/"
+  },
+  {
+    "name": "Heroku",
+    "slug": "heroku",
+    "url": "https://www.heroku.com/"
+  },
+  {
+    "name": "Vue.js",
+    "slug": "vue",
+    "url": "https://vuejs.org/"
+  },
+  {
+    "name": "Crystal",
+    "slug": "crystal",
+    "url": "https://crystal-lang.org/"
+  },
+  {
+    "name": "Docker",
+    "slug": "docker",
+    "url": "https://www.docker.com/"
+  },
+  {
+    "name": "PostgreSQL",
+    "slug": "postgres",
+    "url": "https://www.postgresql.org/"
+  },
+  {
+    "name": "AWS",
+    "slug": "aws",
+    "url": "https://aws.amazon.com/"
+  },
+  {
+    "name": "Codeship",
+    "slug": "codeship",
+    "url": "http://codeship.com/"
+  }
+]
