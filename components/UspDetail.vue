@@ -33,7 +33,7 @@ export default {
 
 .usp-detail {
   display: flex;
-  justify-content: center;
+  align-items: center;
   @media (max-width: $mobile) {
     flex-wrap: wrap;
   }
