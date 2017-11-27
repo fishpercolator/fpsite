@@ -78,7 +78,10 @@ export default {
       }
     }
   },
-  mounted () { if (!this.current) this.changeProject(projects[0].slug) }
+  mounted () {
+    if (this.currentSlug === 'lif-backend-integration-for-mighty') this.changeProject('wordpress-plugins')
+    else if (!this.current) this.changeProject(projects[0].slug)
+  }
 }
 </script>
 

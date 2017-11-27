@@ -2,6 +2,20 @@ var theme = '#660080';
 var name = 'Fish Percolator';
 var lang = 'en-GB';
 
+// Generate routes for all the project pages in addition to the main site -
+// we'll also generate routes for the excluded items below that don't go into
+// the sitemap
+var routes = require('./assets/projects.json').map((p) => `/project/${p.slug}`)
+
+// Pages to exclude from the sitemap - these are redirects (plus the 404 page)
+var excluded = [
+  '/404', '/about/ethos', '/about/rich-cv',
+  '/project/mapsheet-working-title', '/project/gsoh', '/project/jelly',
+  '/project/lif-backend-integration-for-mighty',
+  '/services', '/services/software-from-scratch',
+  '/services/software-consultancy', '/services/business-technology'
+]
+
 module.exports = {
   /*
   ** Manifest
@@ -42,7 +56,8 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
-    ['@nuxtjs/google-analytics', {id: 'UA-66641490-1'}]
+    ['@nuxtjs/google-analytics', {id: 'UA-66641490-1'}],
+    '@nuxtjs/sitemap'
   ],
   plugins: [
     '~/plugins/globals.js'
@@ -66,14 +81,12 @@ module.exports = {
     },
   },
   generate: {
-    routes: [
-      // 404 page is static on GitHub Pages
-      '/404', 
-      // Pages that existed on the old site and are redirects now
-      '/project/mapsheet-working-title', '/project/gsoh', '/project/jelly',
-      '/services/software-from-scratch', '/services/software-consultancy',
-      '/services/business-technology'
-      // One route for each project
-    ].concat(require('./assets/projects.json').map((p) => `/project/${p.slug}`))
+    routes: routes.concat(excluded),
+  },
+  sitemap: {
+    generate: true,
+    hostname: 'https://www.fishpercolator.co.uk',
+    routes: routes,
+    exclude: excluded
   }
 }
