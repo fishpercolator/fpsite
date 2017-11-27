@@ -135,11 +135,17 @@ export default {
       h2 {
         margin-top: 0;
         padding: 0.5em 0.5em 0 0.5em;
+        @media (max-width: $mobile) {
+          padding-top: 1em;
+        }
       }
       img#projectheader {
         width: 100%;
         height: 271px;
         object-fit: cover;
+        @media (max-width: $mobile) {
+          height: 150px;
+        }
       }
       
       blockquote {
@@ -171,16 +177,15 @@ export default {
         @media (max-width: $mobile) {
           display: block;
           position: absolute;
-          top: calc(50vh - 3rem);
+          top: 18.5rem;
           font-size: 1.5em;
-          height: 6rem;
+          height: 5rem;
           width: 2.5rem;
-          line-height: 6rem;
+          line-height: 5rem;
           text-align: right;
-          background-color: $title;
+          background-color: transparentize($title, 0.3);
           color: $white;
-          border: 1px solid $white;
-          border-left: none;
+          border: 1px solid $title;
           border-radius: 0 5px 5px 0;
           animation-name: little-bounce;
           animation-duration: 0.5s;
