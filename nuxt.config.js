@@ -48,7 +48,8 @@ module.exports = {
       {name: 'twitter:card', content: 'summary_large_image'},
       {name: 'twitter:site', content: '@fishpercolator'},
       {name: 'twitter:image', content: `${canonical}/twimage.jpg`},
-      {name: 'twitter:image:alt', content: 'A laptop displaying the Fish Percolator website'}
+      {name: 'twitter:image:alt', content: 'A laptop displaying the Fish Percolator website'},
+      {name: 'fb:app_id', property: 'fb:app_id', content: '129961957696166'}
     ]
   },
   /*

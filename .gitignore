@@ -13,3 +13,4 @@ dist
 # PWA
 sw.*
 
+static/sitemap.xml
