@@ -18,12 +18,16 @@ export default {
     'usp-detail': UspDetail
   },
   head () {
+    var title = 'About'
     var desc = 'What makes Fish Percolator different from all the other software houses out there?'
     return {
-      title: 'About',
+      title,
       meta: [
+        {name: 'og:title', property: 'og:title', content: `${title} | Fish Percolator`},
+        {name: 'twitter:title', content: `${title} | Fish Percolator`},
         {name: 'description', content: desc},
-        {name: 'og:description', content: desc}
+        {name: 'og:description', property: 'og:description', content: desc},
+        {name: 'twitter:description', content: desc}
       ]
     }
   },

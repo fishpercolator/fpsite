@@ -59,13 +59,17 @@ export default {
     'tech-logo': TechLogo
   },
   head () {
+    var title = 'Fish Percolator'
     var desc = 'Helping startups get started. Web app and software development house in Leeds, UK.'
     return {
-      title: 'Fish Percolator',
+      title,
       titleTemplate: undefined,
       meta: [
+        {name: 'og:title', property: 'og:title', content: title},
+        {name: 'twitter:title', content: title},
         {name: 'description', content: desc},
-        {name: 'og:description', content: desc}
+        {name: 'og:description', property: 'og:description', content: desc},
+        {name: 'twitter:description', content: desc}
       ]
     }
   },
