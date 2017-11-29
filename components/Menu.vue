@@ -142,11 +142,14 @@ nav {
 	opacity: 0.8;
 	transform: none;
 	pointer-events: auto;
+  cursor: context-menu;
 	transition-delay: 0s;
   font-size: $size*0.8;
   
 	&:hover {
     text-decoration: none;
+    transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 1;
 	}
 } 
 </style>
