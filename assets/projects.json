@@ -30,6 +30,12 @@
     "content": "<img class=\"logo\" src=\"/clients/usdl.png\" alt=\"Urban Sustainable Development Lab logo\" /><p><strong>Crisis Dashboard</strong> is a project developed by the <a href=\"http://sustainabledevelopmentlab.com/\">Urban Sustainable Development Lab</a>, of which Fish Percolator is a member. It is an Android application developed for Leeds City Council, which provides a specific service to victims of domestic violence.</p><p>Because of the sensitive nature of this project, it is not possible to provide too many details about it in this public portfolio, but we’d be happy to talk about this privately if you’d like to know more.</p><p class=\"cta\"><a href=\"http://sustainabledevelopmentlab.com/2016/08/05/software-can-create-social-impact-but-only-if-it-is-sympathetic-to-the-intricacies-of-our-lives/\">Read more on the USDL blog</a></p>"
   },
   {
+    "slug": "maple",
+    "name": "Maple",
+    "desc": "Mapping Leeds: a dynamic web app for visualising Leeds datasets",
+    "content": "<p><strong>Maple</strong> (<strong>Map</strong>ping <strong>Le</strong>eds) is a browser-based app for visualising datasets of Leeds geographic data.</p><p>It contains two tools: a ward map, which shows a numeric dataset as relative intensities of Leeds's 33 wards, and a postcode map which displays a heatmap given a list of postcodes in the city.</p><p>It was commissioned by <a href=\"http://www.opforum.org.uk/\">Leeds Older People's Forum</a> for their datasets, but it can be used for all kinds of Leeds datasets, from election results to the locations of pedestrian crossings.</p><p>Maple was developed entirely in <A href=\"https://vuejs.org/\">Vue.js</a> in 2 days and runs in the browser with no server-side components at all.</p><p>Features of this app include:</p><ul><li>A hybrid of open data and the Google Maps API.</li><li>A fully reactive interface: maps redraw whenever any field changes.</li><li>Auto-saving using browser local storage.</li><li>A mechanism for downloading the map as an image using the mystical <a href=\"https://html2canvas.hertzen.com/\">html2canvas</a>.</li></ul><p>Maple is best viewed on a desktop in the Chrome browser, as it uses a number of cutting-edge browser features.</p><p class=\"cta\"><a href=\"https://www.fishpercolator.co.uk/maple/\">Try Maple for yourself</a></p>"
+  },
+  {
     "slug": "sampleism",
     "name": "Sampleism DB",
     "desc": "Migration of database & data from one cloud provider to another",
