@@ -8,14 +8,14 @@
         </ul>
         <div id="project" v-if="current">
           <button id="opener" @click="menuOpen = !menuOpen" v-touch:swipe="swipePanel" :aria-label="menuOpen ? 'close menu':'open menu'"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
-          <img id="projectheader" v-lazy="currentImage" :src="$Lazyload.options.loading" :alt="current.name"/>
+          <img id="projectheader" v-lazy="currentImage" :key="currentImage" :src="$Lazyload.options.loading" :alt="current.name"/>
           <h2>{{current.name}}</h2>
           <div class="content" v-html="current.content"></div>
           <div class="nextprev">
             <a v-if="prev" @click.prevent="changeProject(prev.slug)" :href="`/project/${prev.slug}`">&laquo; {{prev.name}}</a>
             <a v-else></a>
             <a v-if="next" @click.prevent="changeProject(next.slug)" :href="`/project/${next.slug}`">{{next.name}} &raquo;</a>
-          </div>     
+          </div>
         </div>
       </div>
     </div>
@@ -153,21 +153,21 @@ export default {
           height: 150px;
         }
       }
-      
+
       blockquote {
         padding: 0.5em 0;
         background-color: transparentize($title, 0.9);
         border-radius: 5px;
         font-size: 0.9em;
       }
-      
+
       img.logo {
         float: right;
         width: 15em;
         max-width: 35vw;
         margin: 0 1em 1em 1em;
       }
-      
+
       .nextprev {
         display: flex;
         padding: 1em;
