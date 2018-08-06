@@ -58,6 +58,11 @@
       }
     }
   }
+  p.cta + p.cta {
+    a {
+      background: $contrast;
+    }
+  }
   img.feature {
     float: right;
     max-width: 20em;
