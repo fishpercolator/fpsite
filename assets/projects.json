@@ -36,6 +36,12 @@
     "content": "<p><a href=\"https://fanserve.co.uk/\"><strong>FanServe</strong></a> is a startup that aims to bring mobile phone priority food ordering to football stadiums, by offering an ordering experience tailored to the timings of sports.</p><p>The app allows consumers to quickly choose items from a menu, then select where they'd like to pick them up and whether before the game or at half time. Chefs at kiosks are given a tablet-based realtime view on all orders in progress with one click to change the status of an order.</p><p>FanServe offers a full Progressive Web App experience with a frontend created in <a href=\"https://nuxtjs.org/\">Nuxt</a> &amp; <a href=\"https://vuetifyjs.com/en/\">Vuetify</a> that behaves as a full mobile app in the browser, only downloading data from the Rails-API-based backend when it needs updates.</p><p class=\"cta\"><a href=\"https://fanserve.co.uk/\">Visit the FanServe marketing site</a></p>"
   },
   {
+    "slug": "mog",
+    "name": "MoGian calendar",
+    "desc": "JavaScript library to convert between Gregorian and MoGian dates",
+    "content": "<p>The <a href=\"https://twitter.com/themofginger\"><strong>Ministry of Ginger</strong></a> is a creative entity that is challenging our collective understanding of international law. It has its own calendar that is a radical departure from the Gregorian calendar used by most countries.</p><p>We built a frontend JavaScript library for converting a Gregorian date to a MoGian date. The library was built using ES7 with a Webpack toolchain and features:</p><ul><li>Automated installation into elements with a specific class</li><li>An integrated calendar-picker widget based on <a href=\"https://github.com/Pikaday/Pikaday\">Pikaday</a></li><li>A full programming interface for fine-grained control</li><li>Embedded CSS using <a href=\"https://github.com/webpack-contrib/css-loader\">css-loader</a></li><li>No external dependencies</li></ul><p class=\"cta\"><a href=\"https://fishpercolator.co.uk/mogian.js\">Read the documentation</a></p>"
+  },
+  {
     "slug": "maple",
     "name": "Maple",
     "desc": "Mapping Leeds: a dynamic web app for visualising Leeds datasets",
