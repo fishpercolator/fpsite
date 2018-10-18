@@ -37,11 +37,11 @@ export default {
       return {
         title: this.current.name,
         meta: [
-          {name: 'og:title', property: 'og:title', content: `${this.current.name} | Fish Percolator`},
-          {name: 'twitter:title', content: `${this.current.name} | Fish Percolator`},
-          {name: 'description', content: this.current.desc},
-          {name: 'og:description', property: 'og:description', content: this.current.desc},
-          {name: 'twitter:description', content: this.current.desc}
+          { name: 'og:title', property: 'og:title', content: `${this.current.name} | Fish Percolator` },
+          { name: 'twitter:title', content: `${this.current.name} | Fish Percolator` },
+          { name: 'description', content: this.current.desc },
+          { name: 'og:description', property: 'og:description', content: this.current.desc },
+          { name: 'twitter:description', content: this.current.desc }
         ]
       }
     } else {
@@ -50,7 +50,7 @@ export default {
       }
     }
   },
-  data () { return {projects: projects, currentSlug: this.slug, menuOpen: false} },
+  data () { return { projects: projects, currentSlug: this.slug, menuOpen: false } },
   computed: {
     current () {
       if (this.currentSlug) {

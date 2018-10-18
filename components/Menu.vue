@@ -18,7 +18,7 @@ Adapted from https://codepen.io/bennettfeely/pen/qRJOZJ
 <script>
 export default {
   data () {
-    return {isOpen: false}
+    return { isOpen: false }
   }
 }
 </script>
@@ -60,8 +60,8 @@ nav {
 		transform: translate3d(0,0,0);
 	}
 }
-  
-.disc {	
+
+.disc {
 	position: absolute;
 	display: inline-block;
 	text-align: center;
@@ -75,14 +75,14 @@ nav {
 	opacity: 0;
 	cursor: pointer;
 	transition: transform $transition $bounce, opacity $transition;
-	
+
 	div {
 		transform: rotate(180deg);
 	}
-	
+
 	.open & {
 		pointer-events: auto;
-		opacity: 0.8;	
+		opacity: 0.8;
     display: inline-block;
 	}
 }
@@ -94,7 +94,7 @@ nav {
 		$pct : $i/$items * 100%;
 		$color :  mix($color-inner, $color-outer, $pct);
     $darker : mix(black, $color, 90%);
-		
+
 		top: $i * $size;
 		left: $i * $size;
 		right: $i * $size;
@@ -103,12 +103,12 @@ nav {
     color: $darker;
     font-weight: bold;
 		transition-delay: $i * $transition/$items;
-	
+
 		.open & {
 			transition-delay: $i * $transition/$items;
 			transform: scale3d(1,1,1) rotate3d(0,0,1,$start-rot);
 			opacity: 0.8;
-			
+
 			&:hover {
         text-decoration: none;
 				background: $darker;
@@ -126,7 +126,7 @@ nav {
           content: '• ';
         }
 			}
-			
+
 			&.toggle {
 				transform: scale3d(.9,.9,.9) rotate3d(0,0,1,$start-rot);
 			}
@@ -145,11 +145,11 @@ nav {
   cursor: context-menu;
 	transition-delay: 0s;
   font-size: $size*0.8;
-  
+
 	&:hover {
     text-decoration: none;
     transform: scale3d(1.1, 1.1, 1.1);
     opacity: 1;
 	}
-} 
+}
 </style>

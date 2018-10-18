@@ -23,15 +23,15 @@ export default {
     return {
       title,
       meta: [
-        {name: 'og:title', property: 'og:title', content: `${title} | Fish Percolator`},
-        {name: 'twitter:title', content: `${title} | Fish Percolator`},
-        {name: 'description', content: desc},
-        {name: 'og:description', property: 'og:description', content: desc},
-        {name: 'twitter:description', content: desc}
+        { name: 'og:title', property: 'og:title', content: `${title} | Fish Percolator` },
+        { name: 'twitter:title', content: `${title} | Fish Percolator` },
+        { name: 'description', content: desc },
+        { name: 'og:description', property: 'og:description', content: desc },
+        { name: 'twitter:description', content: desc }
       ]
     }
   },
-  data () { return {usps} }
+  data () { return { usps } }
 }
 </script>
 

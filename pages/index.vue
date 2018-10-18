@@ -65,11 +65,11 @@ export default {
       title,
       titleTemplate: undefined,
       meta: [
-        {name: 'og:title', property: 'og:title', content: title},
-        {name: 'twitter:title', content: title},
-        {name: 'description', content: desc},
-        {name: 'og:description', property: 'og:description', content: desc},
-        {name: 'twitter:description', content: desc}
+        { name: 'og:title', property: 'og:title', content: title },
+        { name: 'twitter:title', content: title },
+        { name: 'description', content: desc },
+        { name: 'og:description', property: 'og:description', content: desc },
+        { name: 'twitter:description', content: desc }
       ]
     }
   },
