@@ -67,67 +67,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~assets/settings";
+@import "~assets/form";
+
 .contact-form {
+  @extend %fp-form;
   margin: 0.5em;
-  .elements {
-    display: flex;
-    flex-direction: column;
-    label {
-      margin: 0 0.5em 1em 0.5em;
-      span {
-        display: block;
-        height: 0;
-        font-size: 0.9rem;
-        line-height: 1.1rem;
-        font-weight: bold;
-        transition: height 0.2s ease-in-out;
-        overflow: hidden;
-        &.visible {
-          height: 1.1rem;
-        }
-      }
-    }
-    input, textarea {
-      display: block;
-      width: calc(100% - 1em);
-      background: transparentize($black, 0.9);
-      border: none;
-      border-bottom: 2px solid transparentize($title, 0.6);
-      padding: 0.5em;
-      margin-top: 0.5em;
-      font-size: 1rem;
-      font-family: $font;
-      &:focus {
-        outline: none;
-        border-bottom-color: $title;
-      }
-    }
-    textarea {
-      min-height: 4em;
-    }
-    button {
-      background: $title;
-      color: $white;
-      border: none;
-      border-radius: 3px;
-      padding: 0.5em;
-      font-size: 1em;
-      margin: 0 0.5em 0.5em 0.5em;
-      cursor: default;
-      img {
-        height: 1em;
-      }
-      &:hover {
-        background: linear-gradient(darken($title, 9), $title);
-        text-decoration: none;
-      }
-    }
-  }
-  .message {
-    margin: 1em 0.5em;
-    font-weight: bold;
-    color: $accent;
-  }
 }
 </style>

@@ -4,6 +4,10 @@
       <h2>Contact us</h2>
       <ContactForm />
     </div>
+    <div id="list">
+      <h2>Get our quarterly emails</h2>
+      <ListForm />
+    </div>
     <div id="details">
       <h2>All the details</h2>
       <div class="columns">
@@ -68,6 +72,7 @@
 
 <script>
 import ContactForm from '../components/ContactForm.vue'
+import ListForm from '../components/ListForm.vue'
 
 export default {
   head () {
@@ -85,7 +90,8 @@ export default {
     }
   },
   components: {
-    ContactForm
+    ContactForm,
+    ListForm
   },
   data () {
     return {
@@ -142,6 +148,9 @@ export default {
     }
   }
   #form {
+    @extend %box;
+  }
+  #list {
     @extend %box;
   }
 }

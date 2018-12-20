@@ -16,6 +16,10 @@
         Get in touch
       </RouterLink>
     </div>
+    <div id="list" class="info">
+      <h2>Get our quarterly emails</h2>
+      <ListForm />
+    </div>
     <div id="usps" class="info">
       <h2>Why we're different</h2>
       <div class="bullets">
@@ -60,13 +64,15 @@ import techs from '../assets/techs.json'
 import Client from '../components/Client.vue'
 import UspBullet from '../components/UspBullet.vue'
 import TechLogo from '../components/TechLogo.vue'
+import ListForm from '../components/ListForm.vue'
 
 export default {
   name: 'Home',
   components: {
     Client,
     UspBullet,
-    TechLogo
+    TechLogo,
+    ListForm
   },
   head () {
     var title = 'Fish Percolator'
