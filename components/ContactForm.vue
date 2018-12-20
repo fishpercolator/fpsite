@@ -1,21 +1,29 @@
 <template>
   <form class="contact-form" :action="endpoint" method="POST">
-    <div v-if="sent" class="message">Thanks for your message! We'll be in touch shortly.</div>
-    <div class="elements" v-else>
+    <div v-if="sent" class="message">
+      Thanks for your message! We'll be in touch shortly.
+    </div>
+    <div v-else class="elements">
       <label for="name">
-        <span :class="{visible: name}">Name</span>
-        <input type="text" name="name" v-model="name" id="name" placeholder="Name">
+        <span :class="{visible: name}">
+          Name
+        </span>
+        <input id="name" v-model="name" type="text" name="name" placeholder="Name">
       </label>
       <label for="email">
-        <span :class="{visible: email}">Email</span>
-        <input type="email" name="_replyto" v-model="email" id="email" placeholder="Email">
+        <span :class="{visible: email}">
+          Email
+        </span>
+        <input id="email" v-model="email" type="email" name="_replyto" placeholder="Email">
       </label>
       <label for="message">
-        <span :class="{visible: message}">Your message</span>
-        <textarea name="message" v-model="message" id="message" placeholder="Your message"></textarea>
+        <span :class="{visible: message}">
+          Your message
+        </span>
+        <textarea id="message" v-model="message" name="message" placeholder="Your message" />
       </label>
-      <button @click.prevent="submit" :disabled="sending">
-        <img src="~assets/img/send.svg" alt="Paper aeroplane" />
+      <button :disabled="sending" @click.prevent="submit">
+        <img src="~assets/img/send.svg" alt="Paper aeroplane">
         Send
       </button>
     </div>
@@ -37,14 +45,14 @@ export default {
     }
   },
   methods: {
-    submit (event) {
+    submit () {
       this.sending = true
       axios.post(this.endpoint, {
         name: this.name,
         _replyto: this.email,
         message: this.message
       })
-        .then((response) => {
+        .then(() => {
           this.sent = true
           this.sending = false
         })

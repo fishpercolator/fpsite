@@ -1,26 +1,37 @@
-<template>
+0<template>
   <div id="error">
     <div id="error-inner">
       <h1>Don't drink that coffee!</h1>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/iSxNP-1VpjE" frameborder="0" allowfullscreen></iframe>
-      <div id="error-desc" v-if="error.statusCode == 404">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iSxNP-1VpjE" frameborder="0" allowfullscreen />
+      <div v-if="error.statusCode == 404" id="error-desc">
         <h2>This page couldn't be found</h2>
-        <p>Well, this is embarrassing. If you got here by following a link, please <router-link to="/contact">let us know</router-link> so we can fix it.</p>
+        <p>
+          Well, this is embarrassing. If you got here by following a link, please <RouterLink to="/contact">
+            let us know
+          </RouterLink> so we can fix it.
+        </p>
       </div>
       <div v-else>
-        <h2>Error: {{error.message}}</h2>
+        <h2>Error: {{ error.message }}</h2>
         <p>Yerg! Something went wrong.</p>
       </div>
     </div>
     <div class="cta">
-      <router-link to="/">Go home</router-link>
+      <RouterLink to="/">
+        Go home
+      </RouterLink>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['error'],
+  props: {
+    error: {
+      type: String,
+      required: true
+    }
+  },
   layout: 'default',
   mounted () {
     console.log(this.error.message)

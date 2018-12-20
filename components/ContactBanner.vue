@@ -3,19 +3,27 @@
     <div>
       <div>
         <img src="~assets/img/email-w.svg" alt="Envelope" title="Email">
-        <a href="mailto:hello@fishpercolator.co.uk">hello@fishpercolator.co.uk</a>
+        <a href="mailto:hello@fishpercolator.co.uk">
+          hello@fishpercolator.co.uk
+        </a>
       </div>
       <div>
         <img src="~assets/img/phone-w.svg" alt="Phone" title="Phone">
-        <a href="tel:+447963043979">07963 043979</a>
+        <a href="tel:+447963043979">
+          07963 043979
+        </a>
       </div>
       <div>
         <img src="~assets/img/twitter-w.svg" alt="Twitter logo" title="Twitter">
-        <a href="https://twitter.com/fishpercolator">@fishpercolator</a>
+        <a href="https://twitter.com/fishpercolator">
+          @fishpercolator
+        </a>
       </div>
       <div>
         <img src="~assets/img/medium-w.svg" alt="Medium logo" title="Blog on Medium">
-        <a href="https://medium.com/@fishpercolator">Blog</a>
+        <a href="https://medium.com/@fishpercolator">
+          Blog
+        </a>
       </div>
     </div>
   </div>

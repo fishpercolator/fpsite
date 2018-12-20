@@ -1,9 +1,11 @@
 <template>
   <div id="about">
     <h1>Why we're different</h1>
-    <usp-detail v-for="usp in usps" v-bind="usp" :key="usp.slug" />
+    <UspDetail v-for="usp in usps" :key="usp.slug" v-bind="usp" />
     <div class="cta">
-      <router-link to="/contact">Get in touch</router-link>
+      <RouterLink to="/contact">
+        Get in touch
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -13,9 +15,9 @@ import usps from '../../assets/usps.json'
 import UspDetail from '../../components/UspDetail.vue'
 
 export default {
-  name: 'about',
+  name: 'About',
   components: {
-    'usp-detail': UspDetail
+    UspDetail
   },
   head () {
     var title = 'About'

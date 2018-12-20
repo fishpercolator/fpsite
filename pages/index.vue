@@ -1,43 +1,53 @@
 <template>
   <div id="home">
-    <img src="~assets/img/logo.svg" id="logo" alt="Fish Percolator" />
+    <img id="logo" src="~assets/img/logo.svg" alt="Fish Percolator">
     <div id="intro" class="info">
-      <img class="feature" v-lazy="home_img_url" :src="$Lazyload.options.loading" alt="App running on an Android phone" />
+      <img v-lazy="home_img_url" class="feature" :src="$Lazyload.options.loading" alt="App running on an Android phone">
       <h2>Helping startups get started</h2>
       <p>Fish Percolator is a software development house in Leeds, UK. We specialize in getting startups over the starting line.</p>
       <p>You bring the ideas and expertise in your field, and we'll build the technology you need to take your business to market.</p>
       <p>Unlike some other firms, we're with you all the way: our software is designed to be scalable and maintainable, and we can empower you with the tools and skills you need to keep your product alive.</p>
-      <a class="award" href="https://www.ipse.co.uk/our/news-listing/ipse-announces-2017-awards-finalists-.html"><img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire" /></a>
+      <a class="award" href="https://www.ipse.co.uk/our/news-listing/ipse-announces-2017-awards-finalists-.html">
+        <img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire">
+      </a>
     </div>
     <div class="cta">
-      <router-link to="/contact">Get in touch</router-link>
+      <RouterLink to="/contact">
+        Get in touch
+      </RouterLink>
     </div>
     <div id="usps" class="info">
       <h2>Why we're different</h2>
       <div class="bullets">
-        <bullet v-for="usp in usps" :key="usp.slug" v-bind="usp" />
+        <UspBullet v-for="usp in usps" :key="usp.slug" v-bind="usp" />
       </div>
     </div>
     <div class="cta">
-      <router-link to="/about">See all</router-link>
+      <RouterLink to="/about">
+        See all
+      </RouterLink>
     </div>
     <div id="clients" class="info">
       <h2>Our clients &amp; partners include</h2>
       <div class="logos">
-        <client v-for="client in clients" :key="client.slug" v-bind="client" />
+        <Client v-for="client in clients" :key="client.slug" v-bind="client" />
       </div>
     </div>
     <div class="cta">
-      <router-link to="/projects">View our portfolio</router-link>
+      <RouterLink to="/projects">
+        View our portfolio
+      </RouterLink>
     </div>
     <div id="tech" class="info">
       <h2>Tech we love</h2>
       <div class="logos">
-        <tech-logo v-for="tech in techs" :key="tech.slug" v-bind="tech" />
+        <TechLogo v-for="tech in techs" :key="tech.slug" v-bind="tech" />
       </div>
     </div>
     <div class="cta">
-      <router-link to="/contact">Contact us</router-link>
+      <RouterLink to="/contact">
+        Contact us
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -52,11 +62,11 @@ import UspBullet from '../components/UspBullet.vue'
 import TechLogo from '../components/TechLogo.vue'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
-    client: Client,
-    bullet: UspBullet,
-    'tech-logo': TechLogo
+    Client,
+    UspBullet,
+    TechLogo
   },
   head () {
     var title = 'Fish Percolator'

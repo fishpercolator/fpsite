@@ -1,25 +1,46 @@
 <template>
   <div id="portfolio">
     <div class="panel">
-      <h1 class="flush">Portfolio</h1>
+      <h1 class="flush">
+        Portfolio
+      </h1>
       <div id="projects" :class="{menuopen: menuOpen}">
         <ul id="projectlist" v-touch:swipe.left="swipePanel">
-          <li v-for="project in projects" :class="{current: currentSlug === project.slug}"><a @click.prevent="changeProject(project.slug)" :href="`/project/${project.slug}`">{{project.name}}</a></li>
+          <li v-for="project in projects" :key="project.slug" :class="{current: currentSlug === project.slug}">
+            <a :href="`/project/${project.slug}`" @click.prevent="changeProject(project.slug)">
+              {{ project.name }}
+            </a>
+          </li>
         </ul>
-        <div id="project" v-if="current">
-          <button id="opener" @click="menuOpen = !menuOpen" v-touch:swipe="swipePanel" :aria-label="menuOpen ? 'close menu':'open menu'"><span v-if="menuOpen">◀</span><span v-else>▶</span></button>
-          <img id="projectheader" v-lazy="currentImage" :key="currentImage" :src="$Lazyload.options.loading" :alt="current.name"/>
-          <h2>{{current.name}}</h2>
-          <div class="content" v-html="current.content"></div>
+        <div v-if="current" id="project">
+          <button id="opener" v-touch:swipe="swipePanel" :aria-label="menuOpen ? 'close menu':'open menu'" @click="menuOpen = !menuOpen">
+            <span v-if="menuOpen">
+              ◀
+            </span><span v-else>
+              ▶
+            </span>
+          </button>
+          <img id="projectheader" :key="currentImage" v-lazy="currentImage" :src="$Lazyload.options.loading" :alt="current.name">
+          <h2>{{ current.name }}</h2>
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <div class="content" v-html="current.content" />
           <div class="nextprev">
-            <a v-if="prev" @click.prevent="changeProject(prev.slug)" :href="`/project/${prev.slug}`">&laquo; {{prev.name}}</a>
-            <a v-else></a>
-            <a v-if="next" @click.prevent="changeProject(next.slug)" :href="`/project/${next.slug}`">{{next.name}} &raquo;</a>
+            <a v-if="prev" :href="`/project/${prev.slug}`" @click.prevent="changeProject(prev.slug)">
+              &laquo; {{ prev.name }}
+            </a>
+            <a v-else />
+            <a v-if="next" :href="`/project/${next.slug}`" @click.prevent="changeProject(next.slug)">
+              {{ next.name }} &raquo;
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="cta"><router-link to="/contact">Contact us</router-link></div>
+    <div class="cta">
+      <RouterLink to="/contact">
+        Contact us
+      </RouterLink>
+    </div>
   </div>
 </template>
 
@@ -29,7 +50,8 @@ export default {
   props: {
     slug: {
       type: String,
-      required: false
+      required: false,
+      default: null
     }
   },
   head () {
@@ -60,10 +82,15 @@ export default {
           return projects[idx]
         }
       }
+      return null
     },
     next () { return projects[this.current.index + 1] },
     prev () { return projects[this.current.index - 1] },
     currentImage () { return `/projects/${this.currentSlug}.jpg` }
+  },
+  mounted () {
+    if (this.currentSlug === 'lif-backend-integration-for-mighty') this.changeProject('wordpress-plugins')
+    else if (!this.current) this.changeProject(projects[0].slug)
   },
   methods: {
     changeProject (slug) {
@@ -80,10 +107,6 @@ export default {
           break
       }
     }
-  },
-  mounted () {
-    if (this.currentSlug === 'lif-backend-integration-for-mighty') this.changeProject('wordpress-plugins')
-    else if (!this.current) this.changeProject(projects[0].slug)
   }
 }
 </script>

@@ -1,16 +1,34 @@
 <template>
   <div class="usp-detail">
-    <img :src="image" :alt="img_desc" />
+    <img :src="image" :alt="img_desc">
     <div>
-      <h2>{{name}}</h2>
-      <div v-html="description" @click="handleLink"></div>
+      <h2>{{ name }}</h2>
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <div @click="handleLink" v-html="description" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['slug', 'name', 'img_desc', 'description'],
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    },
+    imgDesc: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    }
+  },
   computed: {
     image () {
       return `/usps/${this.slug}.svg`

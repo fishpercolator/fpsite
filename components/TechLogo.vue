@@ -1,13 +1,26 @@
 <template>
   <a class="techlogo" :href="url">
-    <img v-lazy="logo" :src="$Lazyload.options.loading" :alt="logo_name"/>
-    <h3>{{name}}</h3>
+    <img v-lazy="logo" :src="$Lazyload.options.loading" :alt="logo_name">
+    <h3>{{ name }}</h3>
   </a>
 </template>
 
 <script>
 export default {
-  props: ['name', 'slug', 'url'],
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    },
+    url: {
+      type: String,
+      required: true
+    }
+  },
   computed: {
     logo () {
       return `/techs/${this.slug}.png`

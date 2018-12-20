@@ -1,13 +1,15 @@
 <template>
   <div class="bullet-outer">
     <div class="bullet" @click="modalShown = true">
-      <img v-lazy="image" :src="$Lazyload.options.loading":alt="img_desc" />
-      <h3>{{name}}</h3>
+      <img v-lazy="image" :src="$Lazyload.options.loading" :alt="imgDesc">
+      <h3>{{ name }}</h3>
     </div>
-    <div class="modal" v-if="modalShown" @click="modalShown = false">
+    <div v-if="modalShown" class="modal" @click="modalShown = false">
       <div class="modal-content" @click.stop="">
-        <div class="close" @click="modalShown = false">×</div>
-        <usp-detail v-bind="$props" />
+        <div class="close" @click="modalShown = false">
+          ×
+        </div>
+        <UspDetail v-bind="$props" />
       </div>
     </div>
   </div>
@@ -16,9 +18,26 @@
 <script>
 import UspDetail from './UspDetail.vue'
 export default {
-  props: ['slug', 'name', 'img_desc', 'description'],
   components: {
-    'usp-detail': UspDetail
+    UspDetail
+  },
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    },
+    imgDesc: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    }
   },
   data () {
     return {

@@ -2,49 +2,49 @@
   {
     "slug": "collaboration",
     "name": "Collaboration",
-    "img_desc": "Fish in teacups having a conversation",
+    "imgDesc": "Fish in teacups having a conversation",
     "description": "<p>Developing software is a team effort: it can't be done well without communication.</p><p>When we build software, we keep dialogue open with you, so that we can share prototypes, exchange ideas and make sure we stay on the same page at all times. Before each iteration, we formalise requirements <em>together</em> with you, so that there are no big surprises on delivery day.</p><p><strong>Consultation is always free</strong>: we don't believe in charging you before you know if we're the right fit.</p>"
   },
   {
     "slug": "honesty",
     "name": "Honesty & humour",
-    "img_desc": "Person with a percolator and a speech bubble containing a fish",
+    "imgDesc": "Person with a percolator and a speech bubble containing a fish",
     "description": "<p>It's easy for software developers to adopt the 'car mechanic' approach and keep you in the dark about how hard something is or why something costs what it does. Honesty is so important to us: we want to make sure you understand <em>why</em> and <em>how</em> things work, both in terms of development and in the way we do business.</p><p>We're huge fans of Plain English, and this is reflected in our communication style and even our contracts.</p><p>Part of why we're in this is to have fun, and we want you to have fun working with us too. So apologies in advance for all the Twin Peaks and Kate Bush references.</p>"
   },
   {
     "slug": "testing",
     "name": "Regression testing",
-    "img_desc": "Two percolators marked with a cross and a tick",
+    "imgDesc": "Two percolators marked with a cross and a tick",
     "description": "<p>Software isn't finished when the first version is delivered. Every release adds new features and functionality.</p><p>That's why regression testing is so important to us: we build automated tests into every iteration of a product so that you can be sure the <em>old</em> features are still working whenever we create new ones.</p><p><a href=\"https://medium.com/@fishpercolator/regression-testing-or-why-the-fastest-developers-might-not-be-the-best-ones-4c2992e37c03\">You can read more about this on our blog</a>.</p>"
   },
   {
     "slug": "scalability",
     "name": "Horizontal scalability",
-    "img_desc": "A wide percolator with an eel",
+    "imgDesc": "A wide percolator with an eel",
     "description": "<p>When you're running a business you need to know it can cope as your userbase grows. Software designed on a small scale is often useless once you reach thousands of users and results in costly rewrites.</p><p>We build web applications to the <a href=\"https://12factor.net/\">Twelve-Factor specification</a>, which means they are designed to grow as your userbase grows, without the need for rewriting. Applications built to this specification are also highly portable, and can equally run on the tiniest virtual server or a scalable cloud like <a href=\"https://www.heroku.com/\">Heroku</a>.</p>"
   },
   {
     "slug": "iterative",
     "name": "Iterative development",
-    "img_desc": "A percolator and three successively larger fish",
+    "imgDesc": "A percolator and three successively larger fish",
     "description": "<p>We don't believe in big six-month projects with all the requirements agreed up-front. With software, it's hard to know what comes next until you and your users have seen and used what's been done so far.</p><p>We develop iteratively, typically doing around 35-40 hours' work on a project at a time. At the end of a phase, you'll have working software you can play with and give to your users, and then we can design the next phase together.</p><p>This also helps us charge appropriately: when a small set of requirements for a phase has been agreed up-front, we can also set a fixed price for that phase, so there are no nasty surprises at the end.</p>"
   },
   {
     "slug": "legacy",
     "name": "Leaving a positive legacy",
-    "img_desc": "A lattice of hexagons, with a fish percolator in the middle",
+    "imgDesc": "A lattice of hexagons, with a fish percolator in the middle",
     "description": "<p>A piece of software is a living work: development doesn't stop when you launch it to customers. There will always be updates, new features and new customers.</p><p>Code written by third parties can be very unpleasant for future developers, especially if the original developer is expected to leave the project immediately after being paid.</p><p>We're extremely aware of this and so we try to create the most reusable and portable code possible, following practices like convention-over-configuration, the Twelve-Factor specification and behaviour-driven development, all of which will help anything we make for you be as comfortable a fit for future developers as it can be.</p>"
   },
   {
     "slug": "trackrecord",
     "name": "Proven success stories",
-    "img_desc": "A percolator winning the gold medal in a sporting event",
+    "imgDesc": "A percolator winning the gold medal in a sporting event",
     "description": "<p>A swanky website isn't going to cut it when you're picking a developer for your next big business idea. You need evidence that we are who we say we are.</p><p>And for that, please <a href=\"/projects\">take a look at our extensive portfolio</a>. We've done work from the smallest tweaks through to entire applications that back tech businesses; work grounded in over 15 years' industry experience.</p><p>In 2017, main developer Rich was chosen as one of ten finalists in the <a href=\"http://www.nationalfreelancersday.com/blog/finalists-announced-ipse-freelancer-year-awards-2017\">IPSE Freelancer of the Year award</a>.</p><blockquote>\"Rich is unlike any other developer we have ever worked with, in that he has that rare combination of technical excellence, crystal clear communication and customer empathy.\"<br/> — David Rose, CEO of <a href=\"/project/noiiz\">Noiiz</a></blockquote>"
   },
   {
     "slug": "conscience",
     "name": "A social conscience",
-    "img_desc": "A percolator protesting with a fish placard",
+    "imgDesc": "A percolator protesting with a fish placard",
     "description": "<p>We make no secret of our political convictions: we're here to make software that benefits humanity, even in small ways. We're not going to sell ourselves out, and that means we're not going to sell you out either.</p><p>It's said that <em>software reproduces oppression unless it is explicitly designed not to</em>. It's easy to miss things like systemic bias or inaccessbility when designing software, and we'll be there trying our hardest to point them out when we see them in designs, or to consult with the affected group.</p><p>We also believe government should be there to protect the vulnerable, and to that end we pay all our taxes, whether or not they are spent wisely by the people in power.</p>"
   }
 ]

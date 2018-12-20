@@ -2,14 +2,26 @@ Adapted from https://codepen.io/bennettfeely/pen/qRJOZJ
 
 <template>
   <div id="menu-container">
-    <nav id="menu" v-bind:class="{ open: isOpen }">
-      <router-link to="/contact" class="disc l1"><div>Contact</div></router-link>
-      <router-link to="/projects" class="disc l2"><div>Portfolio</div></router-link>
-      <router-link to="/about" class="disc l3"><div>About</div></router-link>
-      <router-link to="/" class="disc l4"><div>Home</div></router-link>
+    <nav id="menu" :class="{ open: isOpen }">
+      <RouterLink to="/contact" class="disc l1">
+        <div>Contact</div>
+      </RouterLink>
+      <RouterLink to="/projects" class="disc l2">
+        <div>Portfolio</div>
+      </RouterLink>
+      <RouterLink to="/about" class="disc l3">
+        <div>About</div>
+      </RouterLink>
+      <RouterLink to="/" class="disc l4">
+        <div>Home</div>
+      </RouterLink>
       <a class="disc l5 toggle" @click="isOpen = !isOpen">
-        <span v-if="isOpen" aria-label="close">✕</span>
-        <span v-else aria-label="menu">☰</span>
+        <span v-if="isOpen" aria-label="close">
+          ✕
+        </span>
+        <span v-else aria-label="menu">
+          ☰
+        </span>
       </a>
     </nav>
   </div>
