@@ -96,6 +96,9 @@ export default {
     changeProject (slug) {
       this.currentSlug = slug
       window.history.replaceState({}, null, `/project/${slug}`)
+      document.getElementById('projectheader').scrollIntoView({
+        behavior: 'smooth'
+      })
     },
     swipePanel (direction) {
       switch (direction) {
