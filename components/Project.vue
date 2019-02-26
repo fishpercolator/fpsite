@@ -96,7 +96,8 @@ export default {
     changeProject (slug) {
       this.currentSlug = slug
       window.history.replaceState({}, null, `/project/${slug}`)
-      document.getElementById('projectheader').scrollIntoView({
+      let header = document.getElementById('projectheader')
+      if (header) header.scrollIntoView({
         behavior: 'smooth'
       })
     },
