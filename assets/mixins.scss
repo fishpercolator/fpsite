@@ -26,7 +26,7 @@
   max-width: 60rem;
   line-height: 1.55;
   $space: 1rem;
-  > h1, > h2 {
+  > h1, > h2, > h3 {
     color: $title;
     margin: $space $space 0 $space;
     padding: 0 0 0.5rem 0;
@@ -35,6 +35,11 @@
       padding: 0 $space 0.5rem $space;
       margin: $space 0 0 0;
     }
+  }
+  > h3 {
+    border: none;
+    color: $black;
+    padding-bottom: 0;
   }
   p {
     padding: 0 $space;
