@@ -1,5 +1,5 @@
 FROM base/devel
-MAINTAINER Rich Daley <rich@fishpercolator.co.uk>
+MAINTAINER Quinn Daley <quinn@fishpercolator.co.uk>
 ENV REFRESHED_AT 2017-10-18
 
 ENV APPDIR /usr/src/fpsite
