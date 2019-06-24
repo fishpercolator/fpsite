@@ -109,7 +109,6 @@ module.exports = {
     routes: routes.concat(excluded)
   },
   sitemap: {
-    generate: true,
     hostname: canonical,
     routes: routes,
     exclude: excluded

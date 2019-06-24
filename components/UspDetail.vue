@@ -1,6 +1,6 @@
 <template>
   <div class="usp-detail">
-    <img :src="image" :alt="img_desc">
+    <img :src="image" :alt="imgDesc">
     <div>
       <h2>{{ name }}</h2>
       <!-- eslint-disable-next-line vue/no-v-html -->

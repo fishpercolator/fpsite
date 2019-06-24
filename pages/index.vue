@@ -107,6 +107,7 @@ export default {
   @extend %page;
   img#logo {
     width: 30em;
+    object-fit: contain;
     max-width: 90vw;
     margin-top: 5em;
     margin-bottom: 5em;

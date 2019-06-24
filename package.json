@@ -17,16 +17,16 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.1",
     "@nuxtjs/pwa": "^2.0.2",
-    "@nuxtjs/sitemap": "^0.1.1",
-    "axios": "^0.18.0",
+    "@nuxtjs/sitemap": "^1.2.0",
+    "axios": "^0.19.0",
     "color": "^3.1.0",
     "nuxt": "^2.3.0",
     "vue-lazyload": "^1.1.4",
-    "vue2-touch-events": "^1.0.0"
+    "vue2-touch-events": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.7.0",
+    "eslint": "^5.16.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.5.3",
