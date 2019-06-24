@@ -1,7 +1,7 @@
 <template>
   <div class="vimeo">
     <div class="vimeo__container">
-      <iframe :src="url" class="vimeo__iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe :src="url" class="vimeo__iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
     </div>
   </div>
 </template>
@@ -9,14 +9,14 @@
 <script>
 export default {
   props: {
-    upstream_id: {
+    upstreamId: {
       type: String,
       required: true
     }
   },
   computed: {
     url () {
-      return `https://player.vimeo.com/video/${this.upstream_id}?color=a7efec&title=0&portrait=0&byline=0`
+      return `https://player.vimeo.com/video/${this.upstreamId}?color=a7efec&title=0&portrait=0&byline=0`
     }
   }
 }

@@ -3,7 +3,7 @@
     <img id="logo" src="~assets/img/logo.svg" alt="Fish Percolator">
     <div id="intro" class="info">
       <h2>Changing the world in small ways with technology</h2>
-      <Vimeo class="intro__video" upstream_id="337500213" />
+      <Vimeo class="intro__video" upstream-id="337500213" />
       <p>We help you take your tech product dreams and turn them into reality.</p>
       <p>Our collaborative software development process has helped dozens of tech startups and spinoffs get their unique ideas in front of their customers as a minimum viable product (MVP) since 2015.</p> 
       <p>We're with you all the way: a Fish Percolator MVP isn't a throwaway prototype &mdash; they're designed to be scalable and maintainable, and we can empower you with the tools and skills you need to keep your product alive.</p>
