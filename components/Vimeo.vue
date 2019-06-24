@@ -1,8 +1,10 @@
 <template>
   <div class="vimeo">
-    <div class="vimeo__container">
-      <iframe :src="url" class="vimeo__iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
-    </div>
+    <no-ssr>
+      <div class="vimeo__container">
+        <iframe :src="url" class="vimeo__iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+      </div>
+    </no-ssr>
   </div>
 </template>
 
