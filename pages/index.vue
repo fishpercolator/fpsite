@@ -2,11 +2,12 @@
   <div id="home">
     <img id="logo" src="~assets/img/logo.svg" alt="Fish Percolator">
     <div id="intro" class="info">
-      <img v-lazy="home_img_url" class="feature" :src="$Lazyload.options.loading" alt="App running on an Android phone">
-      <h2>Helping startups get started</h2>
-      <p>Fish Percolator is a software development house in Leeds, UK. We specialize in getting startups over the starting line.</p>
-      <p>You bring the ideas and expertise in your field, and we'll build the technology you need to take your business to market.</p>
-      <p>Unlike some other firms, we're with you all the way: our software is designed to be scalable and maintainable, and we can empower you with the tools and skills you need to keep your product alive.</p>
+      <h2>Changing the world in small ways with technology</h2>
+      <Vimeo class="intro__video" upstream_id="337500213" />
+      <p>We help you take your tech product dreams and turn them into reality.</p>
+      <p>Our collaborative software development process has helped dozens of tech startups and spinoffs get their unique ideas in front of their customers as a minimum viable product (MVP) since 2015.</p> 
+      <p>We're with you all the way: a Fish Percolator MVP isn't a throwaway prototype &mdash; they're designed to be scalable and maintainable, and we can empower you with the tools and skills you need to keep your product alive.</p>
+      <p>Our mission is to <b>change the world in small ways through the application of technology</b>. Does that match your product idea? Let's work together!</p>
       <a class="award" href="https://www.ipse.co.uk/our/news-listing/ipse-announces-2017-awards-finalists-.html">
         <img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire">
       </a>
@@ -65,6 +66,7 @@ import Client from '../components/Client.vue'
 import UspBullet from '../components/UspBullet.vue'
 import TechLogo from '../components/TechLogo.vue'
 import ListForm from '../components/ListForm.vue'
+import Vimeo from '../components/Vimeo.vue'
 
 export default {
   name: 'Home',
@@ -72,7 +74,8 @@ export default {
     Client,
     UspBullet,
     TechLogo,
-    ListForm
+    ListForm,
+    Vimeo
   },
   head () {
     var title = 'Fish Percolator'
@@ -135,6 +138,14 @@ export default {
   #tech .logos {
     padding: 0.5em;
     justify-content: center;
+  }
+  #intro {
+    //text-align: center;
+  }
+  .intro__video {
+    padding: 1em;
+    max-width: 640px;
+    margin: 0 auto;
   }
 }
 </style>
