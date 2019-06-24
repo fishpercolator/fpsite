@@ -139,9 +139,6 @@ export default {
     padding: 0.5em;
     justify-content: center;
   }
-  #intro {
-    //text-align: center;
-  }
   .intro__video {
     padding: 1em;
     max-width: 640px;
