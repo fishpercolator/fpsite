@@ -103,37 +103,40 @@ export default {
   },
   jsonld () {
     let root = 'https://www.fishpercolator.co.uk'
-    return {
-      '@context': 'http://schema.org',
-      '@type': 'Corporation',
-      name: 'Fish Percolator',
-      url: `${root}/`,
-      logo: `${root}${require('~/assets/img/logo.svg')}`,
-      foundingDate: '2015-06-01',
-      founder: { '@type': 'Person', name: 'Quinn Daley' },
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Duke Studios, 3 Sheaf Street',
-        addressLocality: 'Leeds',
-        postalCode: 'LS10 1HD',
-        addressCountry: 'GB'
-      },
-      contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'All enquiries',
-        email: 'mailto:hello@fishpercolator.co.uk',
-        telephone: '07963 043979'
-      },
-      sameAs: [
-        'https://twitter.com/fishpercolator',
-        'https://www.facebook.com/fishpercolator/',
-        'https://www.linkedin.com/company/fish-percolator/',
-        'https://medium.com/@fishpercolator'
-      ],
-      legalName: 'Fish Percolator Limited',
-      isicV4: '6201',
-      vatID: 'GB218804800'
-    }
+    return [
+      {
+        '@context': 'http://schema.org',
+        '@type': 'Corporation',
+        name: 'Fish Percolator',
+        url: `${root}/`,
+        logo: `${root}/icon.png`,
+        foundingDate: '2015-06-01',
+        founder: { '@type': 'Person', name: 'Quinn Daley' },
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Duke Studios, 3 Sheaf Street',
+          addressLocality: 'Leeds',
+          postalCode: 'LS10 1HD',
+          addressCountry: 'GB'
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer service',
+          email: 'mailto:hello@fishpercolator.co.uk',
+          telephone: '+44-7963043979'
+        },
+        sameAs: [
+          'https://twitter.com/fishpercolator',
+          'https://www.facebook.com/fishpercolator/',
+          'https://www.linkedin.com/company/fish-percolator/',
+          'https://medium.com/@fishpercolator',
+          'https://beta.companieshouse.gov.uk/company/09617660'
+        ],
+        legalName: 'Fish Percolator Limited',
+        isicV4: '6201',
+        vatID: 'GB218804800'
+      }
+    ]
   }
 }
 </script>
