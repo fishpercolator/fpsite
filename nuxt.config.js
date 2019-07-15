@@ -88,7 +88,10 @@ module.exports = {
     ["@nuxtjs/google-analytics", { id: "UA-66641490-1" }],
     "@nuxtjs/sitemap"
   ],
-  plugins: ["~/plugins/globals.js"],
+  plugins: [
+    "~/plugins/globals.js",
+    "~/plugins/jsonld.js"
+  ],
   /*
    ** Build configuration
    */
