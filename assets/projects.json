@@ -36,6 +36,12 @@
     "content": "<p><a href=\"https://digitalurban.com/\"><strong>Digital Urban</strong></a> is a platform for local authorities, architects and the creators of 3D models to collaborate on open digital models of cities. It presents the downloadable models and their metadata in the form of a map, which users can navigate through in order to find the models or info they need.</p><p>Fish Percolator acts as a partner on this project, which is still in the early stages of collecting and storing the content.</p><p>Features of note that we've implemented in the Rails-based web app so far include:</p><ul><li>Browsable map with geometric areas and colour-coded markers, with clustering.</li><li>KML upload of polygons in the administrative interface.</li><li>Machine-readable versions of the data that will be used to populate 3D technology automatically.</li><li>One-time download URLs to files stored in <a href=\"https://aws.amazon.com/s3/\">Amazon S3</a>.</li><li>Access-controlled administrative interface, where local authorities can modify their own data, but not other people's.</li></ul><p class=\"cta\"><a href=\"https://app.digitalurban.com/\">Browse Digital Urban</a></p>"
   },
   {
+    "slug": "aces",
+    "name": "ACes",
+    "desc": "Bespoke evaluation software for Armstrong Cameron",
+    "content": "<p><strong>ACes</strong> (Armstron Cameron evaluation software) is the digital component of <a href=\"http://armstrongcameron.com/\">Armstrong Cameron</a> - a business with a tried-and-tested methodology for evaluating projects in the arts and cultural space.</p><p>A bespoke solution allows for much deeper integration, branding and only relevant features for the evaluation process, which has already been proven to work through many successful projects in the past.</p><p>ACes is a mobile-first Rails database app with various exciting features that are still under wraps right now.</p><p>If you have a project that needs independent evaluation, and the idea of experienced evaluators with their own tech sounds interesting, <a href=\"http://armstrongcameron.com/\">get in touch with Armstrong Cameron</a>.</p>"
+  },
+  {
     "slug": "crisis-dashboard",
     "name": "Crisis Dashboard",
     "desc": "A Leeds City Council project to help the victims of domestic violence",
