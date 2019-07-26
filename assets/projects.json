@@ -39,7 +39,7 @@
     "slug": "aces",
     "name": "ACes",
     "desc": "Bespoke evaluation software for Armstrong Cameron",
-    "content": "<p><strong>ACes</strong> (Armstrong Cameron evaluation software) is the digital component of <a href=\"http://armstrongcameron.com/\">Armstrong Cameron</a> - a business with a tried-and-tested methodology for evaluating projects in the arts and cultural space.</p><p>A bespoke solution allows for much deeper integration, branding and only relevant features for the evaluation process, which has already been proven to work through many successful projects in the past.</p><p>ACes is a mobile-first Rails database app with various exciting features that are still under wraps right now.</p><p>If you have a project that needs independent evaluation, and the idea of experienced evaluators with their own tech sounds interesting, <a href=\"http://armstrongcameron.com/\">get in touch with Armstrong Cameron</a>.</p>"
+    "content": "<p><strong>ACes</strong> (Armstrong Cameron evaluation software) is the digital component of <a href=\"http://armstrongcameron.com/\">Armstrong Cameron</a> - experts in evaluating projects in the arts and cultural space.</p><p>A bespoke solution allows for much deeper integration, branding and only relevant features for the evaluation process, which has already been proven to work through many successful projects in the past.</p><p>ACes is a mobile-first Rails database app with various exciting features that are still under wraps right now.</p><p>If you have a project that needs independent evaluation, and the idea of experienced evaluators with their own tech sounds interesting, <a href=\"http://armstrongcameron.com/\">get in touch with Armstrong Cameron</a>.</p>"
   },
   {
     "slug": "crisis-dashboard",
