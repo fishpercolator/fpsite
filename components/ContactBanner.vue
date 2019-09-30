@@ -10,7 +10,7 @@
       <div>
         <img src="~assets/img/phone-w.svg" alt="Phone" title="Phone">
         <a href="tel:+447963043979">
-          07963 043979
+          <s>07963 043979</s>
         </a>
       </div>
       <div>
