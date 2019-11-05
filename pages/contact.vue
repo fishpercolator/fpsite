@@ -21,9 +21,8 @@
           <dt><img src="~assets/img/phone.svg" alt="Phone"> Phone</dt>
           <dd>
             <a href="tel:+447963043979">
-              <s>07963 043979</s>
+              07963 043979
             </a>
-            (sorry; phone is unavailable until 5 Nov 2019 - please email!)
           </dd>
           <dt><img src="~assets/img/twitter.svg" alt="Twitter logo"> Twitter</dt>
           <dd>
