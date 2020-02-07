@@ -115,5 +115,8 @@ module.exports = {
     hostname: canonical,
     routes: routes,
     exclude: excluded
+  },
+  env: {
+    leadForensicsID: process.env.LEAD_FORENSICS_ID
   }
 }
