@@ -19,6 +19,7 @@ export default {
   components: {
     UspDetail
   },
+  data () { return { usps } },
   head () {
     var title = 'About'
     var desc = 'What makes Fish Percolator different from all the other software houses out there?'
@@ -32,8 +33,7 @@ export default {
         { name: 'twitter:description', content: desc }
       ]
     }
-  },
-  data () { return { usps } }
+  }
 }
 </script>
 

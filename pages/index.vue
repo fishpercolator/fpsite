@@ -77,6 +77,15 @@ export default {
     ListForm,
     Vimeo
   },
+  data () {
+    return {
+      clients,
+      usps,
+      techs,
+      home_img_url: require('~/assets/img/home.png'),
+      award_img_url: require('~/assets/img/award.svg')
+    }
+  },
   head () {
     var title = 'Fish Percolator'
     var desc = 'Helping startups get started. Web app and software development house in Leeds, UK.'
@@ -90,15 +99,6 @@ export default {
         { name: 'og:description', property: 'og:description', content: desc },
         { name: 'twitter:description', content: desc }
       ]
-    }
-  },
-  data () {
-    return {
-      clients,
-      usps,
-      techs,
-      home_img_url: require('~/assets/img/home.png'),
-      award_img_url: require('~/assets/img/award.svg')
     }
   },
   jsonld () {
