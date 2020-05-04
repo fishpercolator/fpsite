@@ -50,7 +50,7 @@
               </a><br>3 Sheaf Street<br>Leeds LS10 1HD
             </address><p>
               <em>
-                Come visit us! <a href="http://sheafstcafeteria.com/">
+                Come visit us! <a href="http://sheafst.com/">
                   The café here
                 </a> is amazing.
               </em>
