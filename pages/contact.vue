@@ -12,6 +12,9 @@
       <h2>All the details</h2>
       <div class="columns">
         <dl>
+          <dt><img src="~assets/img/phone-clock.svg" alt="Clock and telephone"> Opening hours</dt>
+          <dd>Currently Wednesdays only, 9am - 5.30pm
+          </dd>
           <dt><img src="~assets/img/email.svg" alt="Envelope"> Email</dt>
           <dd>
             <a href="mailto:hello@fishpercolator.co.uk">

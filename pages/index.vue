@@ -17,6 +17,10 @@
         Get in touch
       </RouterLink>
     </div>
+    <div id="pragmatism" class="info">
+      <h2>Fish Percolator is a microbusiness</h2>
+      <p>Please be aware that Fish Percolator is a microbusiness, currently operating one day a week, and is not available for any large-scale projects. We're still very excited to work with you to get your MVP off the ground!</p>
+    </div>
     <div id="list" class="info">
       <h2>Get our quarterly emails</h2>
       <ListForm />
