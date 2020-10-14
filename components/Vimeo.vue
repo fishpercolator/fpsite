@@ -2,7 +2,7 @@
   <div class="vimeo">
     <no-ssr>
       <div class="vimeo__container">
-        <iframe :src="url" class="vimeo__iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
+        <iframe :src="url" title="embedded Vimeo video" class="vimeo__iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen />
       </div>
     </no-ssr>
   </div>

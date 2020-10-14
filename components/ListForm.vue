@@ -4,7 +4,8 @@
       We send out emails about once every 3 months with links to cool stuff we're doing, things we've seen and technology/productivity tips. You can unsubscribe at any time.
     </p>
     <div class="elements">
-      <input v-model="email" type="email" name="EMAIL" placeholder="Your email address" required>
+      <label for="list-form__email" class="sr-only">Your email address</label>
+      <input id="list-form__email" v-model="email" type="email" name="EMAIL" placeholder="Your email address" required>
       <div class="bot-trap" aria-hidden="true">
         <input type="text" :name="mcBotTrap" tabindex="-1" value="">
       </div>

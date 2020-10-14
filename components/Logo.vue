@@ -21,6 +21,7 @@
     margin-left: 1rem;
     max-height: 3rem;
     max-width: 60vw;
+    height: auto;
   }
 }
 </style>

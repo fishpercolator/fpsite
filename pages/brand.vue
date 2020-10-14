@@ -36,7 +36,7 @@ export default {
       colours: [
         {colour: '#660080', name: 'primary'},
         {colour: '#333333', name: 'secondary'},
-        {colour: '#09a949', name: 'accent'},
+        {colour: '#2a874b', name: 'accent'},
         {colour: '#ab9a00', name: 'contrast'},
         {colour: '#111111', name: 'text'},
         {colour: '#6a7ed7', name: 'links'},

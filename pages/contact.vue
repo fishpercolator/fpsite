@@ -88,9 +88,6 @@ export default {
       gmapsKey: 'AIzaSyBWzXMR3j8Zc4mDBYIBHpw7DDLNQo12Qtc'
     }
   },
-  computed: {
-    gmapsUrl () { return `https://www.google.com/maps/embed/v1/place?key=${this.gmapsKey}&q=Duke+Studios,+Leeds` }
-  },
   head () {
     var title = 'Contact'
     var desc = 'How to get in touch, find us on social media, or read our blog.'
@@ -104,6 +101,9 @@ export default {
         { name: 'twitter:description', content: desc }
       ]
     }
+  },
+  computed: {
+    gmapsUrl () { return `https://www.google.com/maps/embed/v1/place?key=${this.gmapsKey}&q=Duke+Studios,+Leeds` }
   }
 }
 </script>

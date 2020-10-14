@@ -26,13 +26,13 @@
 
 <script>
 export default {
+  layout: 'default',
   props: {
     error: {
       type: String,
       required: true
     }
   },
-  layout: 'default',
   mounted () {
     console.log(this.error.message)
   }

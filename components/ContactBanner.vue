@@ -51,6 +51,7 @@
       height: 1.5em;
       img {
         height: 1.2em;
+        width: auto;
         margin-bottom: 0.3em;
         margin-right: 0.2em;
         vertical-align: middle;

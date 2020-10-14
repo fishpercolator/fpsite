@@ -55,6 +55,24 @@ export default {
     }
   },
   data () { return { projects: projects, currentSlug: this.slug, menuOpen: false } },
+  head () {
+    if (this.current) {
+      return {
+        title: this.current.name,
+        meta: [
+          { name: 'og:title', property: 'og:title', content: `${this.current.name} | Fish Percolator` },
+          { name: 'twitter:title', content: `${this.current.name} | Fish Percolator` },
+          { name: 'description', content: this.current.desc },
+          { name: 'og:description', property: 'og:description', content: this.current.desc },
+          { name: 'twitter:description', content: this.current.desc }
+        ]
+      }
+    } else {
+      return {
+        title: 'Portfolio'
+      }
+    }
+  },
   computed: {
     current () {
       if (this.currentSlug) {
@@ -91,24 +109,6 @@ export default {
         case 'right':
           this.menuOpen = true
           break
-      }
-    }
-  },
-  head () {
-    if (this.current) {
-      return {
-        title: this.current.name,
-        meta: [
-          { name: 'og:title', property: 'og:title', content: `${this.current.name} | Fish Percolator` },
-          { name: 'twitter:title', content: `${this.current.name} | Fish Percolator` },
-          { name: 'description', content: this.current.desc },
-          { name: 'og:description', property: 'og:description', content: this.current.desc },
-          { name: 'twitter:description', content: this.current.desc }
-        ]
-      }
-    } else {
-      return {
-        title: 'Portfolio'
       }
     }
   }
