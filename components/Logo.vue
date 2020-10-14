@@ -1,7 +1,7 @@
 <template>
   <div id="logo-container" :class="{invisible: $route.fullPath == '/'}">
     <RouterLink to="/">
-      <img src="~assets/img/logohoriz.svg" alt="Fish Percolator logo">
+      <img src="~assets/img/logohoriz.svg" alt="Fish Percolator logo" width="247" height="48">
     </RouterLink>
   </div>
 </template>

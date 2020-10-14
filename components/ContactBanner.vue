@@ -2,25 +2,25 @@
   <div id="contactbanner">
     <div>
       <div>
-        <img src="~assets/img/email-w.svg" alt="Envelope" title="Email">
+        <img src="~assets/img/email-w.svg" alt="Envelope" title="Email" width="22" height="22">
         <a href="mailto:hello@fishpercolator.co.uk">
           hello@fishpercolator.co.uk
         </a>
       </div>
       <div>
-        <img src="~assets/img/phone-w.svg" alt="Phone" title="Phone">
+        <img src="~assets/img/phone-w.svg" alt="Phone" title="Phone" width="22" height="22">
         <a href="tel:+447963043979">
           07963 043979
         </a>
       </div>
       <div>
-        <img src="~assets/img/twitter-w.svg" alt="Twitter logo" title="Twitter">
+        <img src="~assets/img/twitter-w.svg" alt="Twitter logo" title="Twitter" width="22" height="22">
         <a href="https://twitter.com/fishpercolator">
           @fishpercolator
         </a>
       </div>
       <div>
-        <img src="~assets/img/medium-w.svg" alt="Medium logo" title="Blog on Medium">
+        <img src="~assets/img/medium-w.svg" alt="Medium logo" title="Blog on Medium" width="22" height="22">
         <a href="https://medium.com/@fishpercolator">
           Blog
         </a>

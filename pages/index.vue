@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <img id="logo" src="~assets/img/logo.svg" alt="Fish Percolator">
+    <img id="logo" src="~assets/img/logo.svg" alt="Fish Percolator" width="540" height="184">
     <div id="intro" class="info">
       <h2>Changing the world in small ways with technology</h2>
       <Vimeo class="intro__video" upstream-id="337500213" />
@@ -9,7 +9,7 @@
       <p>We're with you all the way: a Fish Percolator MVP isn't a throwaway prototype &mdash; they're designed to be scalable and maintainable, and we can empower you with the tools and skills you need to keep your product alive.</p>
       <p>Our mission is to <b>change the world in small ways through the application of technology</b>. Does that match your product idea? Let's work together!</p>
       <a class="award" href="https://www.ipse.co.uk/our/news-listing/ipse-announces-2017-awards-finalists-.html">
-        <img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire">
+        <img v-lazy="award_img_url" :src="$Lazyload.options.loading" alt="ipse Freelancer Awards 2017, Finalist: Inspire" width="252" height="54">
       </a>
     </div>
     <div class="cta">
@@ -102,6 +102,12 @@ export default {
         { name: 'description', content: desc },
         { name: 'og:description', property: 'og:description', content: desc },
         { name: 'twitter:description', content: desc }
+      ],
+      link: [
+        // Preconnect to domains that the Vimeo player uses
+        { rel: 'preconnect', href: 'https://i.vimeocdn.com' },
+        { rel: 'preconnect', href: 'https://f.vimeocdn.com' },
+        { rel: 'preconnect', href: 'https://cdn.jsdelivr.net' }
       ]
     }
   },

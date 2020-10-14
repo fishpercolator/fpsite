@@ -23,7 +23,7 @@
         <textarea id="message" v-model="message" name="message" placeholder="Your message" />
       </label>
       <button :disabled="sending" @click.prevent="submit">
-        <img src="~assets/img/send.svg" alt="Paper aeroplane">
+        <img src="~assets/img/send.svg" alt="Paper aeroplane" width="18" height="18">
         Send
       </button>
     </div>

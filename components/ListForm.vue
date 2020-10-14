@@ -10,7 +10,7 @@
         <input type="text" :name="mcBotTrap" tabindex="-1" value="">
       </div>
       <button>
-        <img src="~assets/img/subscribe.svg" alt="Subscribe symbol">
+        <img src="~assets/img/subscribe.svg" alt="Subscribe symbol" width="18" height="18">
         Subscribe
       </button>
     </div>

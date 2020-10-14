@@ -20,7 +20,7 @@
               ▶
             </span>
           </button>
-          <img id="projectheader" :key="currentImage" v-lazy="currentImage" :src="$Lazyload.options.loading" :alt="current.name">
+          <img id="projectheader" :key="currentImage" v-lazy="currentImage" :src="$Lazyload.options.loading" :alt="current.name" width="768" height="271">
           <h2>{{ current.name }}</h2>
           <!-- eslint-disable-next-line vue/no-v-html -->
           <div class="content" v-html="current.content" />

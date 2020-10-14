@@ -12,41 +12,41 @@
       <h2>All the details</h2>
       <div class="columns">
         <dl>
-          <dt><img src="~assets/img/phone-clock.svg" alt="Clock and telephone"> Opening hours</dt>
+          <dt><img src="~assets/img/phone-clock.svg" alt="Clock and telephone" width="18" height="18"> Opening hours</dt>
           <dd>
             Currently Wednesdays only, 9am - 5.30pm
           </dd>
-          <dt><img src="~assets/img/email.svg" alt="Envelope"> Email</dt>
+          <dt><img src="~assets/img/email.svg" alt="Envelope" width="18" height="18"> Email</dt>
           <dd>
             <a href="mailto:hello@fishpercolator.co.uk">
               hello@fishpercolator.co.uk
             </a>
           </dd>
-          <dt><img src="~assets/img/phone.svg" alt="Phone"> Phone</dt>
+          <dt><img src="~assets/img/phone.svg" alt="Phone" width="18" height="18"> Phone</dt>
           <dd>
             <a href="tel:+447963043979">
               07963 043979
             </a>
           </dd>
-          <dt><img src="~assets/img/twitter.svg" alt="Twitter logo"> Twitter</dt>
+          <dt><img src="~assets/img/twitter.svg" alt="Twitter logo" width="18" height="18"> Twitter</dt>
           <dd>
             <a href="https://twitter.com/fishpercolator">
               @fishpercolator
             </a>
           </dd>
-          <dt><img src="~assets/img/facebook.svg" alt="Thumbs up"> Facebook</dt>
+          <dt><img src="~assets/img/facebook.svg" alt="Thumbs up" width="18" height="18"> Facebook</dt>
           <dd>
             <a href="https://www.facebook.com/fishpercolator/">
               fishpercolator
             </a>
           </dd>
-          <dt><img src="~assets/img/medium.svg" alt="Medium logo"> Blog (on Medium)</dt>
+          <dt><img src="~assets/img/medium.svg" alt="Medium logo" width="18" height="18"> Blog (on Medium)</dt>
           <dd>
             <a href="https://medium.com/@fishpercolator">
               @fishpercolator
             </a>
           </dd>
-          <dt><img src="~assets/img/address.svg" alt="Signpost"> Address</dt>
+          <dt><img src="~assets/img/address.svg" alt="Signpost" width="18" height="18"> Address</dt>
           <dd>
             <address>
               <a href="http://duke-studios.com/">
@@ -60,10 +60,10 @@
               </em>
             </p>
           </dd>
-          <dt><img src="~assets/img/company.svg" alt="Office block"> Company info</dt>
+          <dt><img src="~assets/img/company.svg" alt="Office block" width="18" height="18"> Company info</dt>
           <dd>Fish Percolator Limited<br>England &amp; Wales company #9617660<br>VAT number GB 218804800</dd>
         </dl>
-        <iframe id="map" :src="gmapsUrl" allowfullscreen />
+        <iframe id="map" title="Google Map" :src="gmapsUrl" allowfullscreen />
       </div>
     </div>
     <div class="cta">

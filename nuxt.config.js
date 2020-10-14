@@ -84,7 +84,7 @@ module.exports = {
    ** Nuxt modules & pluginsmeta;
    */
   modules: [
-    "@nuxtjs/pwa",
+    ["@nuxtjs/pwa", { clientsClaim: false }],
     ["@nuxtjs/google-analytics", { id: "UA-66641490-1" }],
     "@nuxtjs/sitemap"
   ],

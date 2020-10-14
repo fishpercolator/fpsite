@@ -1,6 +1,6 @@
 <template>
   <a class="techlogo" :href="url">
-    <img v-lazy="logo" :src="$Lazyload.options.loading" :alt="logo_name">
+    <img v-lazy="logo" :src="$Lazyload.options.loading" :alt="logo_name" width="90" height="90">
     <h3>{{ name }}</h3>
   </a>
 </template>

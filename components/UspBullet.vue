@@ -1,7 +1,7 @@
 <template>
   <div class="bullet-outer">
     <div class="bullet" @click="modalShown = true">
-      <img v-lazy="image" :src="$Lazyload.options.loading" :alt="imgDesc">
+      <img v-lazy="image" :src="$Lazyload.options.loading" :alt="imgDesc" width="180" height="126">
       <h3>{{ name }}</h3>
     </div>
     <div v-if="modalShown" class="modal" @click="modalShown = false">
