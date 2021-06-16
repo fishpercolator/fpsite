@@ -36,6 +36,8 @@ export default {
 </script>
 
 <style lang="scss">
+@use "sass:math";
+
 $size : 40px;
 $items : 5;
 $transition : .5s;
@@ -103,7 +105,7 @@ nav {
 	.l#{$i} {
 		$i : $i - 1;
 		$-i : $items - $i;
-		$pct : $i/$items * 100%;
+		$pct : math.div($i, $items) * 100%;
 		$color :  mix($color-inner, $color-outer, $pct);
     $darker : mix(black, $color, 90%);
 
@@ -114,10 +116,10 @@ nav {
 		background: $color;
     color: $darker;
     font-weight: bold;
-		transition-delay: $i * $transition/$items;
+		transition-delay: math.div($i * $transition, $items);
 
 		.open & {
-			transition-delay: $i * $transition/$items;
+			transition-delay: math.div($i * $transition, $items);
 			transform: scale3d(1,1,1) rotate3d(0,0,1,$start-rot);
 			opacity: 0.8;
 
