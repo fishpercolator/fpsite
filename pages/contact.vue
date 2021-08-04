@@ -61,7 +61,7 @@
             </p>
           </dd>
           <dt><img src="~assets/img/company.svg" alt="Office block" width="18" height="18"> Company info</dt>
-          <dd>Fish Percolator Limited<br>England &amp; Wales company #9617660<br>VAT number GB 218804800</dd>
+          <dd>Fish Percolator Limited<br>England &amp; Wales company #9617660<br>VAT number GB 218804800<br>ICO registration ZB138365</dd>
         </dl>
         <iframe id="map" title="Google Map" :src="gmapsUrl" allowfullscreen />
       </div>
