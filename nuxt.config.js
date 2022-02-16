@@ -24,6 +24,7 @@ var excluded = [
 ]
 
 module.exports = {
+  target: 'static',
   /*
    ** Manifest
    */
