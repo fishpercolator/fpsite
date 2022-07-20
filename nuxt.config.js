@@ -86,7 +86,7 @@ module.exports = {
    */
   modules: [
     ["@nuxtjs/pwa", { clientsClaim: false }],
-    ["@nuxtjs/google-analytics", { id: "UA-66641490-1" }],
+    ["@nuxtjs/google-gtag", { id: "G-H72BHTMVXM" }],
     "@nuxtjs/sitemap"
   ],
   plugins: [
@@ -116,8 +116,5 @@ module.exports = {
     hostname: canonical,
     routes: routes,
     exclude: excluded
-  },
-  env: {
-    leadForensicsID: process.env.LEAD_FORENSICS_ID
   }
 }

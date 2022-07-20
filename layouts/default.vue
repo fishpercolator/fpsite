@@ -19,11 +19,6 @@ export default {
     Logo,
     ContactBanner
   },
-  data () {
-    return {
-      lfid: process.env.leadForensicsID
-    }
-  },
   head () {
     return {
       titleTemplate: '%s | Fish Percolator'
