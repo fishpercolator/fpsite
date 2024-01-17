@@ -39,7 +39,7 @@ export default {
       name: '',
       email: '',
       message: '',
-      endpoint: 'https://formspree.io/hello@fishpercolator.co.uk',
+      endpoint: 'https://formspree.io/f/mnqenlpv',
       sending: false,
       sent: false
     }
